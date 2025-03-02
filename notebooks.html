@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SPL 3 VARIABEL &#8212; My sample book</title>
+    <title>&lt;no title&gt; &#8212; My sample book</title>
   
   
   
@@ -57,8 +57,6 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -181,10 +179,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">SPL 3 VARIABEL</a></li>
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -368,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>SPL 3 VARIABEL</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,10 +372,9 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaannya">Sistem Persamaannya :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-dengan-eliminasi-gauss">Menyelesaikan Dengan Eliminasi Gauss :</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
+
             </nav>
         </div>
     </div>
@@ -391,93 +385,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="spl-3-variabel">
-<h1>SPL 3 VARIABEL<a class="headerlink" href="#spl-3-variabel" title="Link to this heading">#</a></h1>
-<section id="sistem-persamaannya">
-<h2>Sistem Persamaannya :<a class="headerlink" href="#sistem-persamaannya" title="Link to this heading">#</a></h2>
-<p>\begin{aligned}
-x + y + z &amp;= 6 \
-2x - y + 3z &amp;= 14 \
-3x + 4y + z &amp;= 10
-\end{aligned}</p>
-</section>
-<section id="menyelesaikan-dengan-eliminasi-gauss">
-<h2>Menyelesaikan Dengan Eliminasi Gauss :<a class="headerlink" href="#menyelesaikan-dengan-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Tulis terlebih dahulu dalam bentuk Matriks Augmented</p></li>
-</ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-2 &amp; -1 &amp; 3 &amp; | 14 \
-3 &amp; 4 &amp; 1 &amp; | 10
-\end{bmatrix}</p>
-<ul class="simple">
-<li><p>Kolom 1 –&gt; Koefisien x</p></li>
-<li><p>kolom 2 –&gt; y</p></li>
-<li><p>kolom 3 –&gt; z</p></li>
-<li><p>kolom 4 –&gt; Hasil</p></li>
-</ul>
-<ol class="arabic simple" start="2">
-<li><p>Membuat pivot pertama (Elemen [1,1]=1)
-Dikarenakan baris pertama sudah 1,jadi tidak perlu diubah.</p></li>
-<li><p>MeEliminasikan Elemen di Bawah Pivot Pertama
-Nolkan elemen dibawah x pada kolom pertama yaitu (baris 2 dan 3)</p></li>
-</ol>
-<ul class="simple">
-<li><p>baris 2:
-<span class="math notranslate nohighlight">\(R_2 = R_2 - 2R_1\)</span></p></li>
-<li><p>baris 3:
-<span class="math notranslate nohighlight">\(R_3 = R_3 - 3R_1\)</span></p></li>
-</ul>
-<p>Matriks setelah dieliminasi:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; -3 &amp; 1 &amp; | 2 \
-0 &amp; 1 &amp; -2 &amp; | -8
-\end{bmatrix}</p>
-<ol class="arabic simple" start="4">
-<li><p>Membuat Pivot Kedua (Elemen[2,2]=1)
-elemen [2,2] dijadikan 1 dengan membagi baris dengan -3:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(R_2 = \frac{R_2}{-3}\)</span></p>
-<p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -\frac{1}{3} &amp; |-\frac{2}{3} \
-0 &amp; 1 &amp; -2 &amp; |-8
-\end{bmatrix}</p>
-<ol class="arabic simple" start="5">
-<li><p>Meeliminasi Elemen di Bawah Pivot Kedua
-Nolkan Elemen di bawah pivot kedua dengan operasi:
-<span class="math notranslate nohighlight">\(R_3 = R_3 - R_2\)</span></p></li>
-</ol>
-<p>Matriks setelah dieliminasi:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -\frac{1}{3} &amp; |-\frac{2}{3} \
-0 &amp; 1 &amp; -\frac{5}{3}&amp; |-\frac{22}{3}
-\end{bmatrix}</p>
-<ol class="arabic simple" start="6">
-<li><p>Menyelesaikan Dengan Substitusi Balik</p></li>
-</ol>
-<ul class="simple">
-<li><p>baris 3:
-<span class="math notranslate nohighlight">\(\frac{-5}{3} z = \frac{-22}{3}\)</span>
-<span class="math notranslate nohighlight">\(z=\frac{22}{5} = 4.4\)</span></p></li>
-<li><p>baris 2:
-<span class="math notranslate nohighlight">\(y-\frac{1}{3}(4.4) z = -\frac{2}{3}\)</span>
-<span class="math notranslate nohighlight">\(y-1.47 = -0.67\)</span>
-<span class="math notranslate nohighlight">\(y=0.8\)</span></p></li>
-<li><p>baris 1:
-<span class="math notranslate nohighlight">\(x+y+z=6\)</span>
-<span class="math notranslate nohighlight">\(x+0.8+4.4=6\)</span>
-<span class="math notranslate nohighlight">\(x=6-5.2=0.8\)</span></p></li>
-</ul>
-<p>Solusi Akhir:
-<span class="math notranslate nohighlight">\(\boxed{(x, y, z) = (0.8, 0.8, 4.4)}\)</span></p>
-</section>
-</section>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -541,10 +449,9 @@ Nolkan Elemen di bawah pivot kedua dengan operasi:
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaannya">Sistem Persamaannya :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-dengan-eliminasi-gauss">Menyelesaikan Dengan Eliminasi Gauss :</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
+
   </nav></div>
 
 </div></div>
