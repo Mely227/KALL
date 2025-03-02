@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Selamat Datang Di Komputasi Aljabar Linier &#8212; My sample book</title>
+    <title>Sistem Persamaan Linier &#8212; My sample book</title>
   
   
   
@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'SPL';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -143,7 +142,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -174,8 +173,8 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Selamat Datang Di Komputasi Aljabar Linier
                 </a>
             </li>
@@ -250,7 +249,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSPL.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/SPL.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +350,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -362,11 +363,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Selamat Datang Di Komputasi Aljabar Linier</h1>
+    <h1>Sistem Persamaan Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl">Contoh SPL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss">Langkah-Langkah Eliminasi Gauss</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -376,11 +390,57 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="selamat-datang-di-komputasi-aljabar-linier">
-<h1>Selamat Datang Di Komputasi Aljabar Linier<a class="headerlink" href="#selamat-datang-di-komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<p>Setiap langkah kecil dalam belajar membawa perubahan besar. Selamat datang di MK Komputasi Aljabar Linier, tempat di mana ilmu dan semangat bertemu. Mari jelajahi dan terus berkembang !!!</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="sistem-persamaan-linier">
+<h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<p>Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama, dan solusi dari sistem tersebut adalah nilai variabel yang memenuhi semua persamaan secara bersamaan</p>
+</section>
+<section id="contoh-spl">
+<h1>Contoh SPL<a class="headerlink" href="#contoh-spl" title="Link to this heading">#</a></h1>
+<p>\begin{aligned}
+x + 2y + z &amp;= 9 \
+2x + y - z &amp;= 3 \
+3x - y + 2z &amp;= 8
+\end{aligned}</p>
+</section>
+<section id="metode-penyelesaian">
+<h1>Metode Penyelesaian<a class="headerlink" href="#metode-penyelesaian" title="Link to this heading">#</a></h1>
+<p>Substitusi, eliminasi, matriks, atau eliminasi Gauss.</p>
+</section>
+<section id="eliminasi-gauss">
+<h1>Eliminasi Gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h1>
+<p>Eliminasi Gauss adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubahnya ke bentuk eselon baris menggunakan operasi baris elementer.
+Metode ini mempermudah penyelesaian SPL dengan menghilangkan variabel secara bertahap hingga tersisa satu variabel yang bisa disubstitusi kembali.</p>
+</section>
+<section id="langkah-langkah-eliminasi-gauss">
+<h1>Langkah-Langkah Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-eliminasi-gauss" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Tulis Matriks Augmentasi
+-Ubah SPL menjadi matriks augmentasi.
+-Contoh:</p></li>
+</ol>
+<p>\begin{aligned}
+x + 2y + z &amp;= 9 \
+2x + y - z &amp;= 3 \
+3x - y + 2z &amp;= 8
+\end{aligned}</p>
+<p><em>Menjadi</em></p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; | 9 \
+2 &amp; 1 &amp; -1 &amp; | 3 \
+3 &amp; -1 &amp; 2 &amp; | 8
+\end{bmatrix}</p>
+<ol class="arabic simple" start="2">
+<li><p>Bentuk eslon Baris
+-Gunakan Operasi Baris Elementer (OBE) untuk menghasilkan bentuk eselon baris:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Elemen pivot (elemen pertama non-nol pada suatu baris) harus berada di kanan elemen pivot baris sebelumnya.</p></li>
+<li><p>Baris nol (jika ada) berada di bawah baris non-nol.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Subtitusi Balik
+-Setelah matriks dalam bentuk eselon baris, lakukan substitusi balik untuk menemukan nilai variabel</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -413,21 +473,32 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="markdown.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-spl">Contoh SPL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss">Langkah-Langkah Eliminasi Gauss</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
