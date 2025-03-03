@@ -388,9 +388,13 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss">Langkah-Langkah Eliminasi Gauss</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-variabel">SPL 3 VARIABEL</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaannya">Sistem Persamaannya :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-dengan-eliminasi-gauss">Menyelesaikan Dengan Eliminasi Gauss :</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-persamaan">SPL 3 PERSAMAAN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-satu-solusi">1. Sistem dengan Satu Solusi :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-solusi-tak-hingga">2. Sistem dengan Solusi Tak Hingga:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-tanpa-solusi">2. Sistem Tanpa Solusi :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penyelesaian:</a></li>
 </ul>
 </li>
 </ul>
@@ -457,90 +461,178 @@ x + 2y + z &amp;= 9 \
 -Setelah matriks dalam bentuk eselon baris, lakukan substitusi balik untuk menemukan nilai variabel</p></li>
 </ol>
 </section>
-<section id="spl-3-variabel">
-<h1>SPL 3 VARIABEL<a class="headerlink" href="#spl-3-variabel" title="Link to this heading">#</a></h1>
-<section id="sistem-persamaannya">
-<h2>Sistem Persamaannya :<a class="headerlink" href="#sistem-persamaannya" title="Link to this heading">#</a></h2>
+<section id="spl-3-persamaan">
+<h1>SPL 3 PERSAMAAN<a class="headerlink" href="#spl-3-persamaan" title="Link to this heading">#</a></h1>
+<section id="sistem-dengan-satu-solusi">
+<h2>1. Sistem dengan Satu Solusi :<a class="headerlink" href="#sistem-dengan-satu-solusi" title="Link to this heading">#</a></h2>
 <p>\begin{aligned}
 x + y + z &amp;= 6 \
-2x - y + 3z &amp;= 14 \
-3x + 4y + z &amp;= 10
+2x +3y + z &amp;= 14 \
+3x + 2y + 2z &amp;= 17
 \end{aligned}</p>
 </section>
-<section id="menyelesaikan-dengan-eliminasi-gauss">
-<h2>Menyelesaikan Dengan Eliminasi Gauss :<a class="headerlink" href="#menyelesaikan-dengan-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<section id="penyelesaian">
+<h2>Penyelesaian:<a class="headerlink" href="#penyelesaian" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Tulis terlebih dahulu dalam bentuk Matriks Augmented</p></li>
+<li><p>dalam bentuk Matriks Augmented</p></li>
 </ol>
 <p>\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \
-2 &amp; -1 &amp; 3 &amp; | 14 \
-3 &amp; 4 &amp; 1 &amp; | 10
+2 &amp; 3 &amp; 1 &amp; | 13 \
+3 &amp; 2 &amp; 2 &amp; | 17
 \end{bmatrix}</p>
+<p>2.Eliminasi Gauss:</p>
 <ul class="simple">
-<li><p>Kolom 1 –&gt; Koefisien x</p></li>
-<li><p>kolom 2 –&gt; y</p></li>
-<li><p>kolom 3 –&gt; z</p></li>
-<li><p>kolom 4 –&gt; Hasil</p></li>
+<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
 </ul>
-<ol class="arabic simple" start="2">
-<li><p>Membuat pivot pertama (Elemen [1,1]=1)
-Dikarenakan baris pertama sudah 1,jadi tidak perlu diubah.</p></li>
-<li><p>MeEliminasikan Elemen di Bawah Pivot Pertama
-Nolkan elemen dibawah x pada kolom pertama yaitu (baris 2 dan 3)</p></li>
-</ol>
-<ul class="simple">
-<li><p>baris 2:
-<span class="math notranslate nohighlight">\(R_2 = R_2 - 2R_1\)</span></p></li>
-<li><p>baris 3:
-<span class="math notranslate nohighlight">\(R_3 = R_3 - 3R_1\)</span></p></li>
-</ul>
-<p>Matriks setelah dieliminasi:</p>
 <p>\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; -3 &amp; 1 &amp; | 2 \
-0 &amp; 1 &amp; -2 &amp; | -8
+0 &amp; 1 &amp; -1 &amp; | 1 \
+3 &amp; 2 &amp; 2 &amp; | 17
 \end{bmatrix}</p>
+<ul class="simple">
+<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; -1 &amp; | 1 \
+0 &amp; -1 &amp; -1 &amp; | -1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Tambahkan baris 3 dengan baris 2:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; -1 &amp; | 1 \
+0 &amp; 0 &amp; -2 &amp; | 0
+\end{bmatrix}</p>
+<ol class="arabic simple" start="3">
+<li><p>Substitusi Balik:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Dari baris 3:
+<span class="math notranslate nohighlight">\(2z = 0 \Rightarrow z = 0.\)</span></p></li>
+<li><p>Dari baris 2:
+<span class="math notranslate nohighlight">\(y-z=1 \Rightarrow y-0=1 \Rightarrow y=1\)</span></p></li>
+<li><p>Dari baris 1:
+<span class="math notranslate nohighlight">\(x+y+z=6 \Rightarrow x+1+0=6 \Rightarrow x=5\)</span></p></li>
+</ul>
 <ol class="arabic simple" start="4">
-<li><p>Membuat Pivot Kedua (Elemen[2,2]=1)
-elemen [2,2] dijadikan 1 dengan membagi baris dengan -3:</p></li>
+<li><p>Solusi:
+<span class="math notranslate nohighlight">\((x,y,z)=(5,1,0)\)</span></p></li>
 </ol>
-<p><span class="math notranslate nohighlight">\(R_2 = \frac{R_2}{-3}\)</span></p>
-<p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -\frac{1}{3} &amp; |-\frac{2}{3} \
-0 &amp; 1 &amp; -2 &amp; |-8
-\end{bmatrix}</p>
+<p>Sistem Memiliki <strong>satu solusi unik</strong></p>
 <ol class="arabic simple" start="5">
-<li><p>Meeliminasi Elemen di Bawah Pivot Kedua
-Nolkan Elemen di bawah pivot kedua dengan operasi:
-<span class="math notranslate nohighlight">\(R_3 = R_3 - R_2\)</span></p></li>
+<li><p>Gambar Geogebra</p></li>
 </ol>
-<p>Matriks setelah dieliminasi:</p>
+<p><a class="reference external" href="https://www.geogebra.org/m/mrkw38a5">https://www.geogebra.org/m/mrkw38a5</a></p>
+</section>
+<section id="sistem-dengan-solusi-tak-hingga">
+<h2>2. Sistem dengan Solusi Tak Hingga:<a class="headerlink" href="#sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h2>
+<p>\begin{aligned}
+x + 2y + z &amp;= 5 \
+2x +4y + z &amp;= 10 \
+3x + 6y + 3z &amp;= 13
+\end{aligned}</p>
+</section>
+<section id="id1">
+<h2>Penyelesaian:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>dalam bentuk Matriks Augmented</p></li>
+</ol>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; | 5 \
+2 &amp; 4 &amp; 2 &amp; | 10 \
+3 &amp; 6 &amp; 3 &amp; | 15
+\end{bmatrix}</p>
+<p>2.Eliminasi Gauss:</p>
+<ul class="simple">
+<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; | 5 \
+0 &amp; 0 &amp; 0 &amp; | 0 \
+3 &amp; 6 &amp; 3 &amp; | 15
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; 1 &amp; | 5\
+0 &amp; 0 &amp; 0 &amp; | 0 \
+0 &amp; 0 &amp; 0 &amp; | 0
+\end{bmatrix}t</p>
+<p>3.Analisis:</p>
+<ul class="simple">
+<li><p>Baris 2 dan baris 3 semuanya nol, menunjukkan bahwa sistem memiliki <strong>solusi tak hingga</strong>.</p></li>
+<li><p>Variabel bebas:
+<span class="math notranslate nohighlight">\(y dan z\)</span></p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Solusi Umum:
+Dari baris 1: <span class="math notranslate nohighlight">\(x+2y+z=5\)</span>,kita dapat menyatakan <span class="math notranslate nohighlight">\(x\)</span> dalam bentuk <span class="math notranslate nohighlight">\(ydanz\)</span>:
+$x=5-2y-z</p></li>
+</ol>
+<p>Solusi umum:
+<span class="math notranslate nohighlight">\((x,y,z)=(5-2a-b,a,b)\)</span></p>
+<ol class="arabic simple" start="5">
+<li><p>Gambar Geogebra</p></li>
+</ol>
+<p><a class="reference external" href="https://www.geogebra.org/m/ayyuvd9d">https://www.geogebra.org/m/ayyuvd9d</a></p>
+</section>
+<section id="sistem-tanpa-solusi">
+<h2>2. Sistem Tanpa Solusi :<a class="headerlink" href="#sistem-tanpa-solusi" title="Link to this heading">#</a></h2>
+<p>\begin{aligned}
+x + y + z &amp;= 6 \
+2x +3y + z &amp;= 13 \
+3x + 4y + 2z &amp;= 20
+\end{aligned}</p>
+</section>
+<section id="id2">
+<h2>Penyelesaian:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>dalam bentuk Matriks Augmented</p></li>
+</ol>
 <p>\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -\frac{1}{3} &amp; |-\frac{2}{3} \
-0 &amp; 1 &amp; -\frac{5}{3}&amp; |-\frac{22}{3}
+2 &amp; 3 &amp; 1 &amp; | 13 \
+3 &amp; 4 &amp; 2 &amp; | 20
 \end{bmatrix}</p>
-<ol class="arabic simple" start="6">
-<li><p>Menyelesaikan Dengan Substitusi Balik</p></li>
+<p>2.Eliminasi Gauss:</p>
+<ul class="simple">
+<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; -1 &amp; | 1 \
+3 &amp; 4 &amp; 2 &amp; | 20
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; -1 &amp; | 1 \
+0 &amp; 1 &amp; -1 &amp; | 2
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Tambahkan baris 3 dengan baris 2:</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; -1 &amp; | 1 \
+0 &amp; 0 &amp; 0 &amp; | 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="3">
+<li><p>Analisis:</p></li>
 </ol>
 <ul class="simple">
-<li><p>baris 3:
-<span class="math notranslate nohighlight">\(\frac{-5}{3} z = \frac{-22}{3}\)</span>
-<span class="math notranslate nohighlight">\(z=\frac{22}{5} = 4.4\)</span></p></li>
-<li><p>baris 2:
-<span class="math notranslate nohighlight">\(y-\frac{1}{3}(4.4) z = -\frac{2}{3}\)</span>
-<span class="math notranslate nohighlight">\(y-1.47 = -0.67\)</span>
-<span class="math notranslate nohighlight">\(y=0.8\)</span></p></li>
-<li><p>baris 1:
-<span class="math notranslate nohighlight">\(x+y+z=6\)</span>
-<span class="math notranslate nohighlight">\(x+0.8+4.4=6\)</span>
-<span class="math notranslate nohighlight">\(x=6-5.2=0.8\)</span></p></li>
+<li><p>Baris 3 menunjukkan <span class="math notranslate nohighlight">\(0=1\)</span>, yang tidak mungkin. Ini berarti sistem <strong>tidak memiliki solusi</strong>.</p></li>
 </ul>
-<p>Solusi Akhir:
-<span class="math notranslate nohighlight">\(\boxed{(x, y, z) = (0.8, 0.8, 4.4)}\)</span></p>
+<ol class="arabic simple" start="4">
+<li><p>Gambar Geogebra</p></li>
+</ol>
+<p><a class="reference external" href="https://www.geogebra.org/m/ewttf4f4">https://www.geogebra.org/m/ewttf4f4</a></p>
 </section>
 </section>
 
@@ -613,9 +705,13 @@ Nolkan Elemen di bawah pivot kedua dengan operasi:
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss">Langkah-Langkah Eliminasi Gauss</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-variabel">SPL 3 VARIABEL</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaannya">Sistem Persamaannya :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-dengan-eliminasi-gauss">Menyelesaikan Dengan Eliminasi Gauss :</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-persamaan">SPL 3 PERSAMAAN</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-satu-solusi">1. Sistem dengan Satu Solusi :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-solusi-tak-hingga">2. Sistem dengan Solusi Tak Hingga:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-tanpa-solusi">2. Sistem Tanpa Solusi :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penyelesaian:</a></li>
 </ul>
 </li>
 </ul>
