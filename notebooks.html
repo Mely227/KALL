@@ -415,11 +415,12 @@ document.write(`
 </section>
 <section id="contoh-spl">
 <h1>Contoh SPL<a class="headerlink" href="#contoh-spl" title="Link to this heading">#</a></h1>
-<p>\begin{aligned}
-x + 2y + z &amp;= 9 \
-2x + y - z &amp;= 3 \
-3x - y + 2z &amp;= 8
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    x + 2y + z &amp;= 9 \\
+    2x + y - z &amp;= 3 \\
+    3x - y + 2z &amp;= 8
+\end{aligned}\end{split}\]</div>
 </section>
 <section id="metode-penyelesaian">
 <h1>Metode Penyelesaian<a class="headerlink" href="#metode-penyelesaian" title="Link to this heading">#</a></h1>
@@ -437,17 +438,19 @@ Metode ini mempermudah penyelesaian SPL dengan menghilangkan variabel secara ber
 -Ubah SPL menjadi matriks augmentasi.
 -Contoh:</p></li>
 </ol>
-<p>\begin{aligned}
-x + 2y + z &amp;= 9 \
-2x + y - z &amp;= 3 \
-3x - y + 2z &amp;= 8
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    x + 2y + z &amp;= 9 \\
+    2x + y - z &amp;= 3 \\
+    3x - y + 2z &amp;= 8
+\end{aligned}\end{split}\]</div>
 <p><em>Menjadi</em></p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 1 &amp; | 9 \
-2 &amp; 1 &amp; -1 &amp; | 3 \
-3 &amp; -1 &amp; 2 &amp; | 8
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; 1 &amp; | 9 \\ 
+2 &amp; 1 &amp; -1 &amp; | 3 \\ 
+3 &amp; -1 &amp; 2 &amp; | 8 
+\end{bmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li><p>Bentuk eslon Baris
 -Gunakan Operasi Baris Elementer (OBE) untuk menghasilkan bentuk eselon baris:</p></li>
@@ -465,47 +468,52 @@ x + 2y + z &amp;= 9 \
 <h1>SPL 3 PERSAMAAN<a class="headerlink" href="#spl-3-persamaan" title="Link to this heading">#</a></h1>
 <section id="sistem-dengan-satu-solusi">
 <h2>1. Sistem dengan Satu Solusi :<a class="headerlink" href="#sistem-dengan-satu-solusi" title="Link to this heading">#</a></h2>
-<p>\begin{aligned}
-x + y + z &amp;= 6 \
-2x +3y + z &amp;= 14 \
-3x + 2y + 2z &amp;= 17
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    x + y + z &amp;= 6 \\
+    2x +3y + z &amp;= 14 \\
+    3x + 2y + 2z &amp;= 17
+\end{aligned}\end{split}\]</div>
 </section>
 <section id="penyelesaian">
 <h2>Penyelesaian:<a class="headerlink" href="#penyelesaian" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>dalam bentuk Matriks Augmented</p></li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-2 &amp; 3 &amp; 1 &amp; | 13 \
-3 &amp; 2 &amp; 2 &amp; | 17
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+2 &amp; 3 &amp; 1 &amp; | 13 \\ 
+3 &amp; 2 &amp; 2 &amp; | 17 
+\end{bmatrix}\end{split}\]</div>
 <p>2.Eliminasi Gauss:</p>
 <ul class="simple">
 <li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
-3 &amp; 2 &amp; 2 &amp; | 17
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
+3 &amp; 2 &amp; 2 &amp; | 17 
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
-0 &amp; -1 &amp; -1 &amp; | -1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
+0 &amp; -1 &amp; -1 &amp; | -1 
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>Tambahkan baris 3 dengan baris 2:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
 0 &amp; 0 &amp; -2 &amp; | 0
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Substitusi Balik:</p></li>
 </ol>
@@ -529,39 +537,43 @@ x + y + z &amp;= 6 \
 </section>
 <section id="sistem-dengan-solusi-tak-hingga">
 <h2>2. Sistem dengan Solusi Tak Hingga:<a class="headerlink" href="#sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h2>
-<p>\begin{aligned}
-x + 2y + z &amp;= 5 \
-2x +4y + z &amp;= 10 \
-3x + 6y + 3z &amp;= 13
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    x + 2y + z &amp;= 5 \\
+    2x +4y + z &amp;= 10 \\
+    3x + 6y + 3z &amp;= 13
+\end{aligned}\end{split}\]</div>
 </section>
 <section id="id1">
 <h2>Penyelesaian:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>dalam bentuk Matriks Augmented</p></li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 1 &amp; | 5 \
-2 &amp; 4 &amp; 2 &amp; | 10 \
-3 &amp; 6 &amp; 3 &amp; | 15
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; 1 &amp; | 5 \\ 
+2 &amp; 4 &amp; 2 &amp; | 10 \\ 
+3 &amp; 6 &amp; 3 &amp; | 15 
+\end{bmatrix}\end{split}\]</div>
 <p>2.Eliminasi Gauss:</p>
 <ul class="simple">
 <li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 1 &amp; | 5 \
-0 &amp; 0 &amp; 0 &amp; | 0 \
-3 &amp; 6 &amp; 3 &amp; | 15
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; 1 &amp; | 5 \\ 
+0 &amp; 0 &amp; 0 &amp; | 0 \\ 
+3 &amp; 6 &amp; 3 &amp; | 15 
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; 1 &amp; | 5\
-0 &amp; 0 &amp; 0 &amp; | 0 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; 1 &amp; | 5\\ 
+0 &amp; 0 &amp; 0 &amp; | 0 \\ 
 0 &amp; 0 &amp; 0 &amp; | 0
-\end{bmatrix}t</p>
+\end{bmatrix}\end{split}\]</div>
 <p>3.Analisis:</p>
 <ul class="simple">
 <li><p>Baris 2 dan baris 3 semuanya nol, menunjukkan bahwa sistem memiliki <strong>solusi tak hingga</strong>.</p></li>
@@ -571,7 +583,7 @@ x + 2y + z &amp;= 5 \
 <ol class="arabic simple" start="4">
 <li><p>Solusi Umum:
 Dari baris 1: <span class="math notranslate nohighlight">\(x+2y+z=5\)</span>,kita dapat menyatakan <span class="math notranslate nohighlight">\(x\)</span> dalam bentuk <span class="math notranslate nohighlight">\(ydanz\)</span>:
-$x=5-2y-z</p></li>
+<span class="math notranslate nohighlight">\(x=5-2y-z\)</span></p></li>
 </ol>
 <p>Solusi umum:
 <span class="math notranslate nohighlight">\((x,y,z)=(5-2a-b,a,b)\)</span></p>
@@ -582,47 +594,52 @@ $x=5-2y-z</p></li>
 </section>
 <section id="sistem-tanpa-solusi">
 <h2>2. Sistem Tanpa Solusi :<a class="headerlink" href="#sistem-tanpa-solusi" title="Link to this heading">#</a></h2>
-<p>\begin{aligned}
-x + y + z &amp;= 6 \
-2x +3y + z &amp;= 13 \
-3x + 4y + 2z &amp;= 20
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    x + y + z &amp;= 6 \\
+    2x +3y + z &amp;= 13 \\
+    3x + 4y + 2z &amp;= 20
+\end{aligned}\end{split}\]</div>
 </section>
 <section id="id2">
 <h2>Penyelesaian:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>dalam bentuk Matriks Augmented</p></li>
 </ol>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-2 &amp; 3 &amp; 1 &amp; | 13 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+2 &amp; 3 &amp; 1 &amp; | 13 \\ 
 3 &amp; 4 &amp; 2 &amp; | 20
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <p>2.Eliminasi Gauss:</p>
 <ul class="simple">
 <li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
-3 &amp; 4 &amp; 2 &amp; | 20
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
+3 &amp; 4 &amp; 2 &amp; | 20 
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
-0 &amp; 1 &amp; -1 &amp; | 2
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
+0 &amp; 1 &amp; -1 &amp; | 2 
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>Tambahkan baris 3 dengan baris 2:</p></li>
 </ul>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; 1 &amp; -1 &amp; | 1 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; 1 &amp; -1 &amp; | 1 \\ 
 0 &amp; 0 &amp; 0 &amp; | 1
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Analisis:</p></li>
 </ol>
