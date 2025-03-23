@@ -188,6 +188,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -397,6 +398,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penyelesaian:</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-menghitung-persamaan-mejandi-matriks-invers">Tugas Menghitung persamaan mejandi Matriks Invers</a></li>
 </ul>
 
             </nav>
@@ -652,6 +654,115 @@ Dari baris 1: <span class="math notranslate nohighlight">\(x+2y+z=5\)</span>,kit
 <iframe scrolling="no" title="Tanpa Solusi" src="https://www.geogebra.org/material/iframe/id/ewttf4f4/width/630/height/538/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="538px" style="border:0px;"> </iframe>
 </section>
 </section>
+<section id="tugas-menghitung-persamaan-mejandi-matriks-invers">
+<h1>Tugas Menghitung persamaan mejandi Matriks Invers<a class="headerlink" href="#tugas-menghitung-persamaan-mejandi-matriks-invers" title="Link to this heading">#</a></h1>
+<p>Contoh 3 Persamaan :
+$<span class="math notranslate nohighlight">\(
+\begin{aligned}
+4x_1 + 3x_2 - 2x_3 &amp;= 10 \\
+-6x_1 + 5x_2 + 3x_3 &amp;= -8 \\
+2x_1 - 7x_2 + x_3 &amp;= 15
+\end{aligned}
+\)</span>$</p>
+<p>Solusi sistem diberikan oleh:</p>
+<div class="math notranslate nohighlight">
+\[
+x = A^{-1} b
+\]</div>
+<p>Dalam bentuk Matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A =
+\begin{bmatrix}
+4 &amp; 3 &amp; -2 \\
+-6 &amp; 5 &amp; 3 \\
+2 &amp; -7 &amp; 1
+\end{bmatrix} \quad
+B =
+\begin{bmatrix}
+10 \\
+-8 \\
+15
+\end{bmatrix}
+\end{split}\]</div>
+<p>Cara Menghitung Matriks Invers <span class="math notranslate nohighlight">\(A_1\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+A^{-1} = \frac{1}{\det(A)} \text{Adj}(A)
+\]</div>
+<p>det = determinan
+Adj = adjoin dari A</p>
+<p>Hitung determinan terlebih dahulu
+Hasil dari determinan A adalah :
+$<span class="math notranslate nohighlight">\(
+ det (A)= 4(26) - 3(-12) + (-2)(32) \)</span><span class="math notranslate nohighlight">\(
+ \)</span><span class="math notranslate nohighlight">\(= 104 + 36 - 64 = 76
+\)</span>$</p>
+<p>Selanjutnya Menghitung Adjoin(Adj) dari (A)
+Hasil dari Adj(A) adalah :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+26 &amp; -17 &amp; -20 \\
+12 &amp; -8 &amp; -11 \\
+-32 &amp; 22 &amp; 26
+\end{bmatrix}
+\end{split}\]</div>
+<p>Mengitung Matriks Invers :
+$<span class="math notranslate nohighlight">\(
+A^{-1} = \frac{1}{76}
+\begin{bmatrix}
+26 &amp; -17 &amp; -20 \\
+12 &amp; -8 &amp; -11 \\
+-32 &amp; 22 &amp; 26
+\end{bmatrix}
+\)</span>$</p>
+<p>Hasilnya :
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+0.3421 &amp; 0.1447 &amp; 0.25 \\ 
+0.1579 &amp; 0.1053 &amp; 0 \\ 
+0.4211 &amp; 0.4474 &amp; 0.5 
+\end{bmatrix}
+\)</span>$</p>
+<p>Menghitung <span class="math notranslate nohighlight">\( x = A^1b\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+X =
+\begin{bmatrix}
+0.3421 &amp; 0.1447 &amp; 0.25 \\ 
+0.1579 &amp; 0.1053 &amp; 0 \\ 
+0.4211 &amp; 0.4474 &amp; 0.5 
+\end{bmatrix}
+\times
+\begin{bmatrix}
+10 \\ -8 \\ 15
+\end{bmatrix}
+\end{split}\]</div>
+<p>Sehingga :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+x_1 \\ x_2 \\ x_3
+\end{bmatrix} 
+=
+\begin{bmatrix}
+6.0132 \\ 0.7368 \\ 8.1316
+\end{bmatrix}
+\end{split}\]</div>
+<p>Memverifikasi dengan <span class="math notranslate nohighlight">\( A^{-1} X A = I \)</span></p>
+<p>cek menggunakan dengan
+$<span class="math notranslate nohighlight">\( A^{-1} X A = I \)</span>$</p>
+<p>Hasilnya setelah di cek :
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix} 
+1 &amp; 0 &amp; 0 \\ 
+0 &amp; 1 &amp; 0 \\ 
+0 &amp; 0 &amp; 1 
+\end{bmatrix}
+\)</span>$</p>
+<p>maka,ini merupakan matriks identitas, sehingga solusi kita benar.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -731,6 +842,7 @@ Dari baris 1: <span class="math notranslate nohighlight">\(x+2y+z=5\)</span>,kit
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Penyelesaian:</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-menghitung-persamaan-mejandi-matriks-invers">Tugas Menghitung persamaan mejandi Matriks Invers</a></li>
 </ul>
 
   </nav></div>
