@@ -1,5 +1,5 @@
 ---
-title: ' Eigenvalue & Eigenvector '
+title: Eigenvalue & Eigenvector
 
 ---
 
