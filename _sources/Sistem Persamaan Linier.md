@@ -4,7 +4,7 @@ title: Sistem Persamaan Linier
 ---
 
 ##### Sistem Persamaan Linier
-Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama, dan solusi dari sistem tersebut adalah nilai variabel yang memenuhi semua persamaan secara bersamaan.
+Sistem Persamaan Linier adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama, dan solusi dari sistem tersebut adalah nilai variabel yang memenuhi semua persamaan secara bersamaan.
 
 * Contoh SPL 
 
