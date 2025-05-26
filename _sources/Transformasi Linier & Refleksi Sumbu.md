@@ -30,7 +30,7 @@ Misalkan:
 
 ${u} = (u_1, u_2), \quad \mathbf{v} = (v_1, v_2)$
 
-1. Cek Penjumlahan:
+1. Cek Penjumlahan :
 
 \begin{align*}
 T(\mathbf{u} + \mathbf{v}) &= T((u_1 + v_1, u_2 + v_2)) \\
