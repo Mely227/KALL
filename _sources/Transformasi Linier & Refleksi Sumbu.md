@@ -7,7 +7,7 @@ title: Transformasi Linier & Refleksi Sumbu
 
 ##### Pengertian
 Transformasi linier adalah pemetaan (fungsi) dari satu ruang vektor ke ruang vektor lain yang mempertahankan operasi penjumlahan dan perkalian skalar.
-Bentuk umum:
+Bentuk umum :
 $T: \mathbb{R}^n \to \mathbb{R}^m$
 
 ##### Syarat Transformasi Linier
