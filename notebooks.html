@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sistem Persamaan Linier &#8212; My sample book</title>
+    <title>Refleksi Sumbu y=2 &#8212; My sample book</title>
   
   
   
@@ -57,8 +57,6 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -182,11 +180,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Refleksi Sumbu y=2</a></li>
 
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Sistem%20Persamaan%20Linier.html">Sistem Persamaan Linier</a></li>
 
 </ul>
 
@@ -373,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sistem Persamaan Linier</h1>
+    <h1>Refleksi Sumbu y=2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,37 +379,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-persamaan">SPL 3 PERSAMAAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">Matriks Invers</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maka-solusi-akhirnya">6 Maka solusi akhirnya</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-dan-tugas-transformasi-matriks">Ringkasan dan Tugas [Transformasi Matriks]</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-transformasi-matriks">Tugas [Transformasi Matriks]</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-1">Jawaban 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-2">Jawaban 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-5">Jawaban 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-6">Jawaban 6</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier">Transformasi Linier</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-transformasi-linier">Syarat Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1-membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-transformasi-linier">Tugas 1  Membuktikan bahwa <span class="math notranslate nohighlight">\(T(v1,v2)=(v1+v2,v1)\)</span> adalah transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-cari-matriks-rotasi-refleksi-shear-scala">Tugas 2  cari matriks rotasi,refleksi,shear,scala</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-x-2">Refleksi Sumbu X=2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-2">Refleksi Sumbu y=2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-x">Refleksi Sumbu y=x</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-eigenvector">Definisi Eigenvalue Eigenvector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal-ortonormal">Ortogonal &amp; Ortonormal</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Refleksi Sumbu y=2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-x">Refleksi Sumbu y=x</a></li>
 </ul>
 
             </nav>
@@ -426,415 +393,365 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="sistem-persamaan-linier">
-<h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
-<p>Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama, dan solusi dari sistem tersebut adalah nilai variabel yang memenuhi semua persamaan secara bersamaan.</p>
-<ul class="simple">
-<li><p>Contoh SPL</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    x + 2y + z &amp;= 9 \\
-    2x + y - z &amp;= 3 \\
-    3x - y + 2z &amp;= 8
-\end{aligned}\end{split}\]</div>
-<ul class="simple">
-<li><p>Metode Penyelesaian
-Substitusi, eliminasi, matriks, atau eliminasi Gauss.</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>Eliminasi Gauss
+  <!-- ##### Sistem Persamaan Linier
+Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama, dan solusi dari sistem tersebut adalah nilai variabel yang memenuhi semua persamaan secara bersamaan.
+
+* Contoh SPL 
+
+$$\begin{aligned}
+    x + 2y + z &= 9 \\
+    2x + y - z &= 3 \\
+    3x - y + 2z &= 8
+\end{aligned}$$
+
+
+* Metode Penyelesaian
+Substitusi, eliminasi, matriks, atau eliminasi Gauss.
+
+1. Eliminasi Gauss
 Eliminasi Gauss adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubahnya ke bentuk eselon baris menggunakan operasi baris elementer.
-Metode ini mempermudah penyelesaian SPL dengan menghilangkan variabel secara bertahap hingga tersisa satu variabel yang bisa disubstitusi kembali.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Langkah-Langkah Eliminasi Gauss</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>Tulis Matriks Augmentasi
+Metode ini mempermudah penyelesaian SPL dengan menghilangkan variabel secara bertahap hingga tersisa satu variabel yang bisa disubstitusi kembali.
+
+* Langkah-Langkah Eliminasi Gauss
+1. Tulis Matriks Augmentasi
 -Ubah SPL menjadi matriks augmentasi.
--Contoh:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    x + 2y + z &amp;= 9 \\
-    2x + y - z &amp;= 3 \\
-    3x - y + 2z &amp;= 8
-\end{aligned}\end{split}\]</div>
-<p><em>Menjadi</em></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 2 &amp; 1 &amp; | 9 \\ 
-2 &amp; 1 &amp; -1 &amp; | 3 \\ 
-3 &amp; -1 &amp; 2 &amp; | 8 
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Bentuk eslon Baris
--Gunakan Operasi Baris Elementer (OBE) untuk menghasilkan bentuk eselon baris:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Elemen pivot (elemen pertama non-nol pada suatu baris) harus berada di kanan elemen pivot baris sebelumnya.</p></li>
-<li><p>Baris nol (jika ada) berada di bawah baris non-nol.</p></li>
-</ul>
-<ol class="arabic simple" start="3">
-<li><p>Subtitusi Balik
--Setelah matriks dalam bentuk eselon baris, lakukan substitusi balik untuk menemukan nilai variabel</p></li>
-</ol>
-</section>
-<section id="spl-3-persamaan">
-<h1>SPL 3 PERSAMAAN<a class="headerlink" href="#spl-3-persamaan" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Sistem dengan Satu Solusi :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    x + y + z &amp;= 6 \\
-    2x +3y + z &amp;= 14 \\
-    3x + 2y + 2z &amp;= 17
-\end{aligned}\end{split}\]</div>
-<ul class="simple">
-<li><p>Penyelesaian:</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>dalam bentuk Matriks Augmented</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-2 &amp; 3 &amp; 1 &amp; | 13 \\ 
-3 &amp; 2 &amp; 2 &amp; | 17 
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Eliminasi Gauss:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-3 &amp; 2 &amp; 2 &amp; | 17 
-\end{bmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-0 &amp; -1 &amp; -1 &amp; | -1 
-\end{bmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>Tambahkan baris 3 dengan baris 2:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-0 &amp; 0 &amp; -2 &amp; | 0
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="3">
-<li><p>Substitusi Balik:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Dari baris 3:
-<span class="math notranslate nohighlight">\(2z = 0 \Rightarrow z = 0.\)</span></p></li>
-<li><p>Dari baris 2:
-<span class="math notranslate nohighlight">\(y-z=1 \Rightarrow y-0=1 \Rightarrow y=1\)</span></p></li>
-<li><p>Dari baris 1:
-<span class="math notranslate nohighlight">\(x+y+z=6 \Rightarrow x+1+0=6 \Rightarrow x=5\)</span></p></li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>Solusi:
-<span class="math notranslate nohighlight">\((x,y,z)=(5,1,0)\)</span></p></li>
-</ol>
-<p>Sistem Memiliki <strong>satu solusi unik</strong></p>
-<ol class="arabic simple" start="5">
-<li><p>Gambar Geogebra</p></li>
-</ol>
+-Contoh:
+
+$$\begin{aligned}
+    x + 2y + z &= 9 \\
+    2x + y - z &= 3 \\
+    3x - y + 2z &= 8
+\end{aligned}$$
+
+*Menjadi*
+
+$$\begin{bmatrix} 
+1 & 2 & 1 & | 9 \\ 
+2 & 1 & -1 & | 3 \\ 
+3 & -1 & 2 & | 8 
+\end{bmatrix}$$
+
+2. Bentuk eslon Baris
+-Gunakan Operasi Baris Elementer (OBE) untuk menghasilkan bentuk eselon baris:
+* Elemen pivot (elemen pertama non-nol pada suatu baris) harus berada di kanan elemen pivot baris sebelumnya.
+* Baris nol (jika ada) berada di bawah baris non-nol.
+
+3. Subtitusi Balik
+-Setelah matriks dalam bentuk eselon baris, lakukan substitusi balik untuk menemukan nilai variabel -->
+<!-- ##### SPL 3 PERSAMAAN
+* Sistem dengan Satu Solusi : 
+
+$$\begin{aligned}
+    x + y + z &= 6 \\
+    2x +3y + z &= 14 \\
+    3x + 2y + 2z &= 17
+\end{aligned}$$
+
+* Penyelesaian:
+1.  dalam bentuk Matriks Augmented
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+2 & 3 & 1 & | 13 \\ 
+3 & 2 & 2 & | 17 
+\end{bmatrix}$$
+
+2. Eliminasi Gauss:
+* Kurangi baris 2 dengan 2 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+3 & 2 & 2 & | 17 
+\end{bmatrix}$$
+
+* Kurangi baris 3 dengan 3 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+0 & -1 & -1 & | -1 
+\end{bmatrix}$$
+
+* Tambahkan baris 3 dengan baris 2:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+0 & 0 & -2 & | 0
+\end{bmatrix}$$
+
+3. Substitusi Balik:
+* Dari baris 3:
+$2z = 0 \Rightarrow z = 0.$
+* Dari baris 2:
+$y-z=1 \Rightarrow y-0=1 \Rightarrow y=1$
+* Dari baris 1:
+$x+y+z=6 \Rightarrow x+1+0=6 \Rightarrow x=5$
+
+4. Solusi: 
+$(x,y,z)=(5,1,0)$
+
+Sistem Memiliki **satu solusi unik**
+
+5. Gambar Geogebra
+
 <iframe scrolling="no" title="Satu Solusi (Berpotongan)" src="https://www.geogebra.org/material/iframe/id/mrkw38a5/width/1272/height/546/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="546px" style="border:0px;"> </iframe>
-<ul class="simple">
-<li><p>Sistem dengan Solusi Tak Hingga:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    x + 2y + z &amp;= 5 \\
-    2x +4y + z &amp;= 10 \\
-    3x + 6y + 3z &amp;= 13
-\end{aligned}\end{split}\]</div>
-<ul class="simple">
-<li><p>Penyelesaian:</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>dalam bentuk Matriks Augmented</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 2 &amp; 1 &amp; | 5 \\ 
-2 &amp; 4 &amp; 2 &amp; | 10 \\ 
-3 &amp; 6 &amp; 3 &amp; | 15 
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Eliminasi Gauss:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 2 &amp; 1 &amp; | 5 \\ 
-0 &amp; 0 &amp; 0 &amp; | 0 \\ 
-3 &amp; 6 &amp; 3 &amp; | 15 
-\end{bmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 2 &amp; 1 &amp; | 5\\ 
-0 &amp; 0 &amp; 0 &amp; | 0 \\ 
-0 &amp; 0 &amp; 0 &amp; | 0
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="3">
-<li><p>Analisis:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Baris 2 dan baris 3 semuanya nol, menunjukkan bahwa sistem memiliki <strong>solusi tak hingga</strong>.</p></li>
-<li><p>Variabel bebas:
-<span class="math notranslate nohighlight">\(y dan z\)</span></p></li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>Solusi Umum:
-Dari baris 1: <span class="math notranslate nohighlight">\(x+2y+z=5\)</span>,kita dapat menyatakan <span class="math notranslate nohighlight">\(x\)</span> dalam bentuk <span class="math notranslate nohighlight">\(ydanz\)</span>:
-<span class="math notranslate nohighlight">\(x=5-2y-z\)</span></p></li>
-</ol>
-<p>Solusi umum:
-<span class="math notranslate nohighlight">\((x,y,z)=(5-2a-b,a,b)\)</span></p>
-<ol class="arabic simple" start="5">
-<li><p>Gambar Geogebra</p></li>
-</ol>
+
+
+* Sistem dengan Solusi Tak Hingga: 
+
+$$\begin{aligned}
+    x + 2y + z &= 5 \\
+    2x +4y + z &= 10 \\
+    3x + 6y + 3z &= 13
+\end{aligned}$$
+
+* Penyelesaian:
+1.  dalam bentuk Matriks Augmented
+
+$$\begin{bmatrix} 
+1 & 2 & 1 & | 5 \\ 
+2 & 4 & 2 & | 10 \\ 
+3 & 6 & 3 & | 15 
+\end{bmatrix}$$
+
+2. Eliminasi Gauss:
+* Kurangi baris 2 dengan 2 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 2 & 1 & | 5 \\ 
+0 & 0 & 0 & | 0 \\ 
+3 & 6 & 3 & | 15 
+\end{bmatrix}$$
+
+* Kurangi baris 3 dengan 3 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 2 & 1 & | 5\\ 
+0 & 0 & 0 & | 0 \\ 
+0 & 0 & 0 & | 0
+\end{bmatrix}$$
+
+3. Analisis:
+
+* Baris 2 dan baris 3 semuanya nol, menunjukkan bahwa sistem memiliki **solusi tak hingga**.
+
+* Variabel bebas: 
+$y dan z$
+
+4. Solusi Umum:
+Dari baris 1: $x+2y+z=5$,kita dapat menyatakan $x$ dalam bentuk $ydanz$:
+$x=5-2y-z$
+
+Solusi umum:
+$(x,y,z)=(5-2a-b,a,b)$
+
+5. Gambar Geogebra
 <iframe scrolling="no" title="Solusi Tak Hingga" src="https://www.geogebra.org/material/iframe/id/ayyuvd9d/width/1272/height/546/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="546px" style="border:0px;"> </iframe>
-<ul class="simple">
-<li><p>Sistem Tanpa Solusi :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    x + y + z &amp;= 6 \\
-    2x +3y + z &amp;= 13 \\
-    3x + 4y + 2z &amp;= 20
-\end{aligned}\end{split}\]</div>
-<ul class="simple">
-<li><p>Penyelesaian:</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>dalam bentuk Matriks Augmented</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-2 &amp; 3 &amp; 1 &amp; | 13 \\ 
-3 &amp; 4 &amp; 2 &amp; | 20
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Eliminasi Gauss:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Kurangi baris 2 dengan 2 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-3 &amp; 4 &amp; 2 &amp; | 20 
-\end{bmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>Kurangi baris 3 dengan 3 x baris 1:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-0 &amp; 1 &amp; -1 &amp; | 2 
-\end{bmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>Tambahkan baris 3 dengan baris 2:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix} 
-1 &amp; 1 &amp; 1 &amp; | 6 \\ 
-0 &amp; 1 &amp; -1 &amp; | 1 \\ 
-0 &amp; 0 &amp; 0 &amp; | 1
-\end{bmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="3">
-<li><p>Analisis:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Baris 3 menunjukkan <span class="math notranslate nohighlight">\(0=1\)</span>, yang tidak mungkin. Ini berarti sistem <strong>tidak memiliki solusi</strong>.</p></li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>Gambar Geogebra</p></li>
-</ol>
+
+* Sistem Tanpa Solusi : 
+
+$$\begin{aligned}
+    x + y + z &= 6 \\
+    2x +3y + z &= 13 \\
+    3x + 4y + 2z &= 20
+\end{aligned}$$
+
+* Penyelesaian:
+1.  dalam bentuk Matriks Augmented
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+2 & 3 & 1 & | 13 \\ 
+3 & 4 & 2 & | 20
+\end{bmatrix}$$
+
+2. Eliminasi Gauss:
+* Kurangi baris 2 dengan 2 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+3 & 4 & 2 & | 20 
+\end{bmatrix}$$
+
+* Kurangi baris 3 dengan 3 x baris 1:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+0 & 1 & -1 & | 2 
+\end{bmatrix}$$
+
+* Tambahkan baris 3 dengan baris 2:
+
+$$\begin{bmatrix} 
+1 & 1 & 1 & | 6 \\ 
+0 & 1 & -1 & | 1 \\ 
+0 & 0 & 0 & | 1
+\end{bmatrix}$$
+
+3. Analisis:
+* Baris 3 menunjukkan $0=1$, yang tidak mungkin. Ini berarti sistem **tidak memiliki solusi**.
+
+4. Gambar Geogebra
 <iframe scrolling="no" title="Tanpa Solusi" src="https://www.geogebra.org/material/iframe/id/ewttf4f4/width/630/height/538/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="538px" style="border:0px;"> </iframe>
-</section>
-<section id="matriks-invers">
-<h1>Matriks Invers<a class="headerlink" href="#matriks-invers" title="Link to this heading">#</a></h1>
-<p>Matriks Invers adalah matriks yang jika dikalikan dengan matrikd aslinya menghasilkan matriks identitas.jika <span class="math notranslate nohighlight">\(A\)</span> adalah matriks persegi berukuran <span class="math notranslate nohighlight">\(n x n\)</span>,maka invers dari <span class="math notranslate nohighlight">\(A\)</span>, yang dinotasikan sebagai <span class="math notranslate nohighlight">\(A^1\)</span>,memenuhi persamaan berikut:
-<span class="math notranslate nohighlight">\(A x A^1=A^1 x A = I\)</span></p>
-<ul class="simple">
-<li><p>Tugas Matriks Invers (1,0,0)</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p>Langkah 1 membuat 3 persamaan variabel</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+
+ -->
+<!-- ##### Matriks Invers
+Matriks Invers adalah matriks yang jika dikalikan dengan matrikd aslinya menghasilkan matriks identitas.jika $A$ adalah matriks persegi berukuran $n x n$,maka invers dari $A$, yang dinotasikan sebagai $A^1$,memenuhi persamaan berikut:
+$A x A^1=A^1 x A = I$
+
+* Tugas Matriks Invers (1,0,0)
+1. Langkah 1 membuat 3 persamaan variabel
+
+$$
 \begin{cases}  
 4x_1 + 3x_2 - 2x_3 = 4 \\  
 -5x_1 + 6x_2 + x_3 = -5 \\  
 3x_1 - 2x_2 - 4x_3 = 3  
 \end{cases}
-\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Langkah 2 ubah persamaan menjadi matriks</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+2. Langkah 2 ubah persamaan menjadi matriks
+
+$$
 A =
 \begin{bmatrix}  
-4 &amp; 3 &amp; -2 \\  
--5 &amp; 6 &amp; 1 \\  
-3 &amp; -2 &amp; -4  
+4 & 3 & -2 \\  
+-5 & 6 & 1 \\  
+3 & -2 & -4  
 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+$$
 X =
 \begin{bmatrix}  
 x_1 \\  
 x_2 \\  
 X_3  
 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+$$
 B =
 \begin{bmatrix}  
 4 \\  
 -5 \\  
 3  
 \end{bmatrix}
-\end{split}\]</div>
-<ol class="arabic simple" start="3">
-<li><p>Langkah 3 Mencari invers <span class="math notranslate nohighlight">\(A^-1\)</span>
-dengan Rumus:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+3. Langkah 3 Mencari invers $A^-1$
+dengan Rumus:
+
+$$
 A^{-1} \times B =
 \begin{bmatrix}
 1 \\
 0 \\
 0
 \end{bmatrix}
-\end{split}\]</div>
-<ol class="arabic simple" start="4">
-<li><p>Langkah 4 Menghitung Matriks Invers <span class="math notranslate nohighlight">\(A^1\)</span></p></li>
-</ol>
-<p>Selanjutnya untuk mencari <span class="math notranslate nohighlight">\(X\)</span>,kita menggunakan metode matriks invers,yaitu:</p>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+4. Langkah 4 Menghitung Matriks Invers $A^1$
+
+Selanjutnya untuk mencari $X$,kita menggunakan metode matriks invers,yaitu:
+
+$$
 X = A^{-1}B 
-\]</div>
-<p>Mencari invers dari matriks A yaitu dengan metode adjoin dan determinan atau redukasi baris.Hasil dari matriks A yaitu:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+Mencari invers dari matriks A yaitu dengan metode adjoin dan determinan atau redukasi baris.Hasil dari matriks A yaitu:
+
+$$
 A^{-1} =
 \begin{bmatrix}  
-\frac{6}{19} &amp; \frac{-3}{19} &amp; \frac{2}{19} \\  
-\frac{5}{19} &amp; \frac{4}{19} &amp; \frac{1}{19} \\  
-\frac{3}{19} &amp; \frac{-2}{19} &amp; \frac{-9}{19}  
+\frac{6}{19} & \frac{-3}{19} & \frac{2}{19} \\  
+\frac{5}{19} & \frac{4}{19} & \frac{1}{19} \\  
+\frac{3}{19} & \frac{-2}{19} & \frac{-9}{19}  
 \end{bmatrix}
-\end{split}\]</div>
-<ol class="arabic simple" start="5">
-<li><p>Langkah 5 Menghitung <span class="math notranslate nohighlight">\(X = A^{-1}B\)</span>
-selanjutnya hitung satu persatu dengan yang <span class="math notranslate nohighlight">\(B\)</span></p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+5. Langkah 5 Menghitung $X = A^{-1}B$
+selanjutnya hitung satu persatu dengan yang $B$
+
+$$
 X =
 \begin{bmatrix}  
-\frac{6}{19} &amp; \frac{-3}{19} &amp; \frac{2}{19} \\  
-\frac{5}{19} &amp; \frac{4}{19} &amp; \frac{1}{19} \\  
-\frac{3}{19} &amp; \frac{-2}{19} &amp; \frac{-9}{19}  
+\frac{6}{19} & \frac{-3}{19} & \frac{2}{19} \\  
+\frac{5}{19} & \frac{4}{19} & \frac{1}{19} \\  
+\frac{3}{19} & \frac{-2}{19} & \frac{-9}{19}  
 \end{bmatrix}
 \begin{bmatrix}  
 4 \\  
 -5 \\  
 3  
 \end{bmatrix}
-\end{split}\]</div>
-<p>Hitung satu per satu:</p>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+Hitung satu per satu:
+
+$$
 x_1 = \left( \frac{6}{19} \times 4 \right) + \left( \frac{-3}{19} \times (-5) \right) + \left( \frac{2}{19} \times 3 \right)
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 = \frac{24}{19} + \frac{15}{19} + \frac{6}{19} = \frac{45}{19} = 1
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 x_2 = \left( \frac{5}{19} \times 4 \right) + \left( \frac{4}{19} \times (-5) \right) + \left( \frac{1}{19} \times 3 \right)
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 = \frac{20}{19} - \frac{20}{19} + \frac{3}{19} = 0
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 x_3 = \left( \frac{3}{19} \times 4 \right) + \left( \frac{-2}{19} \times (-5) \right) + \left( \frac{-9}{19} \times 3 \right)
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 = \frac{12}{19} + \frac{10}{19} - \frac{27}{19} = 0
-\]</div>
-<section id="maka-solusi-akhirnya">
-<h2>6 Maka solusi akhirnya<a class="headerlink" href="#maka-solusi-akhirnya" title="Link to this heading">#</a></h2>
-<p>hasilnya adalah:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+###### 6 Maka solusi akhirnya 
+hasilnya adalah:
+
+$$
 X =
 \begin{bmatrix}  
 1 \\  
 0 \\  
 0  
 \end{bmatrix}
-\end{split}\]</div>
-<p>sehingga hasilnya:</p>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+sehingga hasilnya:
+
+$$
 x_1 = 1, \quad x_2 = 0, \quad x_3 = 0
-\]</div>
-</section>
-</section>
-<section id="ringkasan-dan-tugas-transformasi-matriks">
-<h1>Ringkasan dan Tugas [Transformasi Matriks]<a class="headerlink" href="#ringkasan-dan-tugas-transformasi-matriks" title="Link to this heading">#</a></h1>
-<p>Transformasi Matriks adalah Bayangin kamu punya vektor (misalnya panah yang nunjuk ke suatu arah), terus kamu “ubah” bentuk atau arahnya pakai aturan tertentu. Nah, kalau aturan itu bisa ditulis pakai perkalian matriks, itu disebut.Dengan menggunakan matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(m\)</span> X <span class="math notranslate nohighlight">\(n\)</span> bisa digunakan untuk mendefinisikan sebuah fungsi <span class="math notranslate nohighlight">\(T\)</span> yang mengambil vektor kolom <span class="math notranslate nohighlight">\(\vec{x}\)</span> adalah vektor kolom berukuran <span class="math notranslate nohighlight">\(n \times 1\)</span> dan menghasilkan vektor kolom <span class="math notranslate nohighlight">\(\vec{y}\)</span> berukuran <span class="math notranslate nohighlight">\(m \times 1\)</span> melalui persamaan:
-$<span class="math notranslate nohighlight">\(
+$$ --><!-- ##### Ringkasan dan Tugas [Transformasi Matriks]
+
+Transformasi Matriks adalah Bayangin kamu punya vektor (misalnya panah yang nunjuk ke suatu arah), terus kamu "ubah" bentuk atau arahnya pakai aturan tertentu. Nah, kalau aturan itu bisa ditulis pakai perkalian matriks, itu disebut.Dengan menggunakan matriks $A$ berukuran $m$ X $n$ bisa digunakan untuk mendefinisikan sebuah fungsi $T$ yang mengambil vektor kolom $\vec{x}$ adalah vektor kolom berukuran $n \times 1$ dan menghasilkan vektor kolom $\vec{y}$ berukuran $m \times 1$ melalui persamaan:
+$$
 \vec{y} = T(\vec{x}) = A\vec{x}
-\)</span>$</p>
-<p>Fungsi ini disebut *Transformasi Matriks, dan termasuk dalam kelas umum yang biasanya disebut *<em>Transformasi Linier</em> yaitu fungsi antar vektor</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p>Perkalian Matriks - Vektor</p></li>
-</ul>
-<p>Agar hasil perkalian tetap berupa vektor  2D <span class="math notranslate nohighlight">\((\ \mathbb{R}^2)\)</span>, maka matriks <span class="math notranslate nohighlight">\(A\)</span> harus berukuran <span class="math notranslate nohighlight">\(2\)</span> X <span class="math notranslate nohighlight">\(2\)</span>.
-Diberikan matriks <span class="math notranslate nohighlight">\(A\)</span> dan tiga vektor <span class="math notranslate nohighlight">\(\vec{x},\ \vec{y},\ \vec{z}\)</span> hasil perkalian antara matriks dan vektor dihitung sebagai berikut:
-$<span class="math notranslate nohighlight">\(
+$$
+
+Fungsi ini disebut *Transformasi Matriks, dan termasuk dalam kelas umum yang biasanya disebut **Transformasi Linier* yaitu fungsi antar vektor
+
+---
+
+* Perkalian Matriks - Vektor
+
+Agar hasil perkalian tetap berupa vektor  2D $(\ \mathbb{R}^2)$, maka matriks $A$ harus berukuran $2$ X $2$. 
+Diberikan matriks $A$ dan tiga vektor $\vec{x},\ \vec{y},\ \vec{z}$ hasil perkalian antara matriks dan vektor dihitung sebagai berikut:
+$$
 A = \begin{bmatrix}
-4 &amp; 2 \\
-1 &amp; 3
+4 & 2 \\
+1 & 3
 \end{bmatrix}, \quad
 \vec{x} = \begin{bmatrix}
 1 \\
@@ -848,9 +765,11 @@ A = \begin{bmatrix}
 3 \\
 -1
 \end{bmatrix}
-\)</span>$</p>
-<p>Solusi:
-$<span class="math notranslate nohighlight">\(
+$$
+
+
+Solusi:
+$$
 A\vec{x} = \begin{bmatrix}
 5 \\
 5
@@ -863,18 +782,21 @@ A\vec{z} = \begin{bmatrix}
 -1 \\
 3
 \end{bmatrix}
-\)</span>$</p>
-<p>Perkalian matriks mengubah panjang dan arah vektor dalam contoh di atas vektor <span class="math notranslate nohighlight">\(\vec{x}\)</span> dan <span class="math notranslate nohighlight">\(A\vec{x}\)</span> memiliki arah yang sama tapi panjangnya yang berubah. Namun, <span class="math notranslate nohighlight">\(\vec{y}\)</span> dan <span class="math notranslate nohighlight">\(\vec{z}\)</span> beruubah arah saat dikalikan dengan <span class="math notranslate nohighlight">\(A\)</span>. Hal ini menunjukkan bahwa matriks bertindak secara berbeda terhadap vektor yang berbeda.</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p>Menggabungkan penjumlahan dan perkalian matriks</p></li>
-</ul>
-<p>Diketahui:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Perkalian matriks mengubah panjang dan arah vektor dalam contoh di atas vektor $\vec{x}$ dan $A\vec{x}$ memiliki arah yang sama tapi panjangnya yang berubah. Namun, $\vec{y}$ dan $\vec{z}$ beruubah arah saat dikalikan dengan $A$. Hal ini menunjukkan bahwa matriks bertindak secara berbeda terhadap vektor yang berbeda.
+
+---
+
+* Menggabungkan penjumlahan dan perkalian matriks
+
+Diketahui:
+
+$$
 A = \begin{bmatrix}
-1 &amp; 1 \\
-1 &amp; 2
+1 & 1 \\
+1 & 2
 \end{bmatrix}, \quad
 \vec{x} = \begin{bmatrix}
 2 \\
@@ -884,12 +806,15 @@ A = \begin{bmatrix}
 -1 \\
 1
 \end{bmatrix}
-\end{split}\]</div>
-<p>Sketsa: <span class="math notranslate nohighlight">\(\vec{x} + \vec{y}\)</span>,<span class="math notranslate nohighlight">\(A\vec{x}\)</span>,<span class="math notranslate nohighlight">\(A\vec{y}\)</span> dan <span class="math notranslate nohighlight">\(A(\vec{x}+\vec{y})\)</span>
-langkah ini bertujuan untuk melihat bagaimana penjumlahan vektor berinteraksi dengan transformasi matriks.</p>
-<p>Dihitung:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Sketsa: $\vec{x} + \vec{y}$,$A\vec{x}$,$A\vec{y}$ dan $A(\vec{x}+\vec{y})$
+langkah ini bertujuan untuk melihat bagaimana penjumlahan vektor berinteraksi dengan transformasi matriks.
+
+Dihitung:
+
+$$
 \vec{x} + \vec{y} = \begin{bmatrix}
 1 \\
 2
@@ -906,18 +831,21 @@ A(\vec{x} + \vec{y}) = \begin{bmatrix}
 3 \\
 5
 \end{bmatrix}
-\end{split}\]</div>
-<p>Ini menunjukkan <em>sifat distributif</em> dari perkalian matriks terhadap penjumlahan vektor: $<span class="math notranslate nohighlight">\(A(\vec{x} + \vec{y}) = A\vec{x} + A\vec{y}\)</span>$</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p>Menggambar Efek dari Perkalian matriks</p></li>
-</ul>
-<p>Diketahui:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Ini menunjukkan *sifat distributif* dari perkalian matriks terhadap penjumlahan vektor: $$A(\vec{x} + \vec{y}) = A\vec{x} + A\vec{y}$$
+
+---
+
+* Menggambar Efek dari Perkalian matriks
+
+Diketahui:
+
+$$
 A = \begin{bmatrix}
-1 &amp; 1 \\
--1 &amp; -1
+1 & 1 \\
+-1 & -1
 \end{bmatrix}, \quad
 \vec{x} = \begin{bmatrix}
 1 \\
@@ -931,10 +859,12 @@ A = \begin{bmatrix}
 4 \\
 4
 \end{bmatrix}
-\end{split}\]</div>
-<p>Solusi:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Solusi:
+
+$$
 A\vec{x} = \begin{bmatrix}
 0 \\
 0
@@ -947,28 +877,32 @@ and \quad
 A\vec{z} = \begin{bmatrix}
 3 \\
 3\end{bmatrix}
-\end{split}\]</div>
-<p>Beberapa vektor seperti <span class="math notranslate nohighlight">\((\vec{x}\)</span> dan <span class="math notranslate nohighlight">\(\vec{y})\)</span> setelah dikalikan dengan matriks, hasilnya adalah vektor nol sementara vektor lain tetepa berada pada garis tertentu.</p>
-<hr class="docutils" />
-<ul class="simple">
-<li><p>Transformasi terhadap bidang kartesius</p></li>
-</ul>
-<p>Pada bagian ini memeperkenalkan transisi dan menggambarkan vektor satu per satu ke menggambarkan bagaimana seluruh bidang katresius <span class="math notranslate nohighlight">\((\ \mathbb{R}^2)\)</span>berubah oleh matriks.</p>
-<ul class="simple">
-<li><p>Visualisasi Transformasi Matriks Menggunnakan vektor</p></li>
-</ul>
-<p>efek transformasi terhadap seluruh bidang Kartesius dengan melihat bagaimana <em>persegi satuan (unit square)</em> berubah.
-Misalkan:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+Beberapa vektor seperti $(\vec{x}$ dan $\vec{y})$ setelah dikalikan dengan matriks, hasilnya adalah vektor nol sementara vektor lain tetepa berada pada garis tertentu.
+
+---
+
+* Transformasi terhadap bidang kartesius
+
+Pada bagian ini memeperkenalkan transisi dan menggambarkan vektor satu per satu ke menggambarkan bagaimana seluruh bidang katresius $(\ \mathbb{R}^2)$berubah oleh matriks.
+
+* Visualisasi Transformasi Matriks Menggunnakan vektor
+
+efek transformasi terhadap seluruh bidang Kartesius dengan melihat bagaimana *persegi satuan (unit square)* berubah.
+Misalkan: 
+
+$$
 A = \begin{bmatrix}
-1 &amp; 4 \\
-2 &amp; 3
+1 & 4 \\
+2 & 3
 \end{bmatrix}
-\end{split}\]</div>
-<p>Titik - titik sudut dari persegi satuan berada di:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Titik - titik sudut dari persegi satuan berada di:
+
+$$
 \begin{bmatrix}
 0 \\
 0
@@ -985,10 +919,13 @@ A = \begin{bmatrix}
 0 \\
 1
 \end{bmatrix}
-\end{split}\]</div>
-<p>Setelah dikalikan deng <span class="math notranslate nohighlight">\(A\)</span>, titik - titik tersebut menjadi:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Setelah dikalikan deng $A$, titik - titik tersebut menjadi:
+
+
+$$
 \begin{bmatrix}
 0 \\
 0
@@ -1005,632 +942,630 @@ A = \begin{bmatrix}
 4 \\
 3
 \end{bmatrix}
-\end{split}\]</div>
-<p>Adapun tips cepat untuk menggunakan matriks kolom:
-Buat matriks <span class="math notranslate nohighlight">\(B\)</span> yang kolom - kolomnya adalah titik - titik sudut:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+ Adapun tips cepat untuk menggunakan matriks kolom: 
+ Buat matriks $B$ yang kolom - kolomnya adalah titik - titik sudut:
+
+
+$$
 B = \begin{bmatrix}
-0 &amp; 1 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 1
+0 & 1 & 1 & 0 \\
+0 & 0 & 1 & 1
 \end{bmatrix}
-\end{split}\]</div>
-<p>Dikalikan:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Dikalikan:
+
+$$
 AB = \begin{bmatrix}
-0 &amp; 2 &amp; 6 &amp; 4 \\
-0 &amp; 1 &amp; 4 &amp; 3
+0 & 2 & 6 & 4 \\
+0 & 1 & 4 & 3
 \end{bmatrix}
-\end{split}\]</div>
-<p>Proses ini cepat jika harus dilakukan transformasi pada banyak titik sekaligus</p>
-<p>Perubahan bentuk dari persegi satuan setelah dikalikan dengan matriks:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$
+
+
+Proses ini cepat jika harus dilakukan transformasi pada banyak titik sekaligus
+
+Perubahan bentuk dari persegi satuan setelah dikalikan dengan matriks:
+
+$$
 A = \begin{bmatrix}
-1 &amp; 4 \\
-2 &amp; 3
+1 & 4 \\
+2 & 3
 \end{bmatrix}
-\end{split}\]</div>
-<p>Menghasilkan persegi berubah menjadi jajargenjang. Selain merenggang, bentuknya juga tampak terbalik, seolah titik - titik segitiga dan persegi saling bertukar tempat.
-menggambarkan bahwa garis-garis lurus pada persegi satuan tetap lurus setelah transformasi oleh matriks, meskipun bentuknya berubah.</p>
-<ul class="simple">
-<li><p>Transformasi Matriks terhadap sebuah wilayah</p></li>
-</ul>
-<p>Matriks yang digunakan:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+$$ 
+
+Menghasilkan persegi berubah menjadi jajargenjang. Selain merenggang, bentuknya juga tampak terbalik, seolah titik - titik segitiga dan persegi saling bertukar tempat.
+menggambarkan bahwa garis-garis lurus pada persegi satuan tetap lurus setelah transformasi oleh matriks, meskipun bentuknya berubah.
+
+* Transformasi Matriks terhadap sebuah wilayah
+
+Matriks yang digunakan: 
+
+$$
 A = \begin{bmatrix}
-0 &amp; -1 \\
-1 &amp; 0
+0 & -1 \\
+1 & 0
 \end{bmatrix}
-\end{split}\]</div>
-<p>Matriks ini merupakan rotasi 90 derajat berlawanan arah jarum jam terhadap titik asal (0,0) dalam bidang kartesius.</p>
-<ul class="simple">
-<li><p>Komposisi Transformasi</p></li>
-</ul>
-<p>Transformasi dapat digabung seperti fungsi:</p>
-<div class="math notranslate nohighlight">
-\[
-(T \circ S)(\vec{x}) = T(S(\vec{x}))\]</div>
-<p>maka:</p>
-<div class="math notranslate nohighlight">
-\[
+$$ 
+
+Matriks ini merupakan rotasi 90 derajat berlawanan arah jarum jam terhadap titik asal (0,0) dalam bidang kartesius.
+
+* Komposisi Transformasi
+
+Transformasi dapat digabung seperti fungsi:
+
+$$
+(T \circ S)(\vec{x}) = T(S(\vec{x}))$$
+
+maka:
+
+$$
 (T \circ S)(\vec{x}) = AB\vec{x}
-\]</div>
-<p>Artinya, komposisi dua transformasi linier bisa direpresentasikan sebagai perkalian dua matriks.</p>
-<ul class="simple">
-<li><p>Ringkasan</p></li>
-</ul>
-<ul class="simple">
-<li><p>Urutan penting! Karena perkalian matriks tidak komutatif, maka</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[ AB \ne BA \]</div>
-<ul class="simple">
-<li><p>Visualisasi transformasi sering dilakukan dengan melihat bagaimana unit square (persegi satuan) berubah.</p></li>
-<li><p>Transformasi non-linear tidak bisa direpresentasikan dengan matriks (contoh: translasi).</p></li>
-</ul>
-</section>
-<section id="tugas-transformasi-matriks">
-<h1>Tugas [Transformasi Matriks]<a class="headerlink" href="#tugas-transformasi-matriks" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>1.<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split} A = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix} \end{split}\]</div>
-</section>
-<section id="jawaban-1">
-<h2>Jawaban 1<a class="headerlink" href="#jawaban-1" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Diketahui :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
+$$
+
+Artinya, komposisi dua transformasi linier bisa direpresentasikan sebagai perkalian dua matriks.
+
+* Ringkasan
+
+- Urutan penting! Karena perkalian matriks tidak komutatif, maka 
+
+$$ AB \ne BA $$
+- Visualisasi transformasi sering dilakukan dengan melihat bagaimana unit square (persegi satuan) berubah.
+
+- Transformasi non-linear tidak bisa direpresentasikan dengan matriks (contoh: translasi). --><!-- #### Tugas [Transformasi Matriks]
+
+##### 1.
+
+$$ A = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} $$
+
+##### Jawaban 1
+- Diketahui :
+
+$$[
 \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
 \vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
-]\end{split}\]</div>
-<ul class="simple">
-<li><p>Penyelesaian :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix}
-]\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A\vec{x} = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+]$$
+
+- Penyelesaian :
+
+$$[
+A = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix}
+]$$
+
+
+$$[
+A\vec{x} = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
 = \begin{bmatrix} 0 \\ 5 \end{bmatrix}
-]\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A\vec{y} = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix}
+]$$
+
+
+$$[
+A\vec{y} = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix}
 = \begin{bmatrix} -3 \\ 4 \end{bmatrix}
-]\end{split}\]</div>
-</section>
-<section id="id2">
-<h2>2.<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split} B = \begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 3 \end{bmatrix} \end{split}\]</div>
-</section>
-<section id="jawaban-2">
-<h2>Jawaban 2<a class="headerlink" href="#jawaban-2" title="Link to this heading">#</a></h2>
-<p>Diketahui :</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
+]$$
+
+
+##### 2. 
+
+$$ B = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} $$
+
+##### Jawaban 2
+
+Diketahui :
+
+$$[
 \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
 \vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}, \quad
-A = \begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 3 \end{bmatrix}
-]\end{split}\]</div>
-<p>Penyelesaian :
-$<span class="math notranslate nohighlight">\([
-A\vec{x} = \begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 3 \end{bmatrix}
+A = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix}
+]$$
+
+Penyelesaian :
+$$[
+A\vec{x} = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix}
 \begin{bmatrix} 1 \\ 1 \end{bmatrix}
 = \begin{bmatrix} 2 \cdot 1 + 0 \cdot 1 \\ -1 \cdot 1 + 3 \cdot 1 \end{bmatrix}
 = \begin{bmatrix} 2 \\ 2 \end{bmatrix}
-]\)</span>$</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A\vec{y} = \begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 3 \end{bmatrix}
+]$$
+
+$$[
+A\vec{y} = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix}
 \begin{bmatrix} -1 \\ 2 \end{bmatrix}
 = \begin{bmatrix} 2 \cdot (-1) + 0 \cdot 2 \\ -1 \cdot (-1) + 3 \cdot 2 \end{bmatrix}
 = \begin{bmatrix} -2 \\ 7 \end{bmatrix}
-]\end{split}\]</div>
-<p>Jadi hasilnya :</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
+]$$
+
+Jadi hasilnya :
+
+$$[
 A\vec{x} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}, \quad
 A\vec{y} = \begin{bmatrix} -2 \\ 7 \end{bmatrix}
-]\end{split}\]</div>
-</section>
-<section id="jawaban-5">
-<h2>Jawaban 5<a class="headerlink" href="#jawaban-5" title="Link to this heading">#</a></h2>
-<p>Dari gambar diketahui transformasi berikut:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
+]$$
+
+##### Jawaban 5
+
+Dari gambar diketahui transformasi berikut:
+
+$$[
 \vec{e}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \rightarrow \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
 \vec{e}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \rightarrow \begin{bmatrix} 1 \\ 3 \end{bmatrix}
-]\end{split}\]</div>
-<p>Maka matriks transformasinya adalah:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A = \begin{bmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{bmatrix}
-]\end{split}\]</div>
-</section>
-<section id="jawaban-6">
-<h2>Jawaban 6<a class="headerlink" href="#jawaban-6" title="Link to this heading">#</a></h2>
-<p>Dari gambar diketahui transformasi berikut:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
+]$$
+
+Maka matriks transformasinya adalah:
+
+$$[
+A = \begin{bmatrix} 1 & 1 \\ 2 & 3 \end{bmatrix}
+]$$
+
+##### Jawaban 6
+Dari gambar diketahui transformasi berikut:
+
+$$[
 \vec{e}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \rightarrow \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
 \vec{e}_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \rightarrow \begin{bmatrix} -1 \\ 1 \end{bmatrix}
-]\end{split}\]</div>
-<p>Maka matriks transformasinya adalah:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}[
-A = \begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 1 \end{bmatrix}
-]\end{split}\]</div>
-</section>
-</section>
-<section id="transformasi-linier">
-<h1>Transformasi Linier<a class="headerlink" href="#transformasi-linier" title="Link to this heading">#</a></h1>
-<section id="pengertian">
-<h2>Pengertian<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>Transformasi linier adalah pemetaan (fungsi) dari satu ruang vektor ke ruang vektor lain yang mempertahankan operasi penjumlahan dan perkalian skalar.
+]$$
+
+Maka matriks transformasinya adalah:
+
+$$[
+A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}
+]$$
+
+
+ -->
+<!-- ### Transformasi Linier
+##### Pengertian
+Transformasi linier adalah pemetaan (fungsi) dari satu ruang vektor ke ruang vektor lain yang mempertahankan operasi penjumlahan dan perkalian skalar.
 Bentuk umum:
-<span class="math notranslate nohighlight">\(T: \mathbb{R}^n \to \mathbb{R}^m\)</span></p>
-</section>
-<section id="syarat-transformasi-linier">
-<h2>Syarat Transformasi Linier<a class="headerlink" href="#syarat-transformasi-linier" title="Link to this heading">#</a></h2>
-<p>Sebuah fungsi <span class="math notranslate nohighlight">\(T (v)\)</span>adalah transformasi linier jika untuk semua vektor <span class="math notranslate nohighlight">\(u,v\)</span> dan skalar <em>c</em>,berlaku:</p>
-<ol class="arabic simple">
-<li><p>Penjumlahan vektor:
-<span class="math notranslate nohighlight">\(T(u+v)=T(u)+T(v)\)</span></p></li>
-<li><p>Perkalian skalar:
-<span class="math notranslate nohighlight">\(T(c v)=cT(v)\)</span>
-Kalau kedua syarat di atas terpenuhi, maka 𝑇 adalah transformasi linier.</p></li>
-</ol>
-</section>
-<section id="tugas-1-membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-transformasi-linier">
-<h2>Tugas 1  Membuktikan bahwa <span class="math notranslate nohighlight">\(T(v1,v2)=(v1+v2,v1)\)</span> adalah transformasi Linier<a class="headerlink" href="#tugas-1-membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-transformasi-linier" title="Link to this heading">#</a></h2>
-</section>
-<section id="jawaban">
-<h2>Jawaban<a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h2>
-<p>Transformasi <span class="math notranslate nohighlight">\(T(v1,v2)=(v1+v2,v1)\)</span> didefinisikan sebagai:
-<span class="math notranslate nohighlight">\(T(v1,v2)=(v1+v2,v1)\)</span></p>
-<p>Misalkan:</p>
-<p><span class="math notranslate nohighlight">\({u} = (u_1, u_2), \quad \mathbf{v} = (v_1, v_2)\)</span></p>
-<ol class="arabic simple">
-<li><p>Cek Penjumlahan:</p></li>
-</ol>
-<p>\begin{align*}
-T(\mathbf{u} + \mathbf{v}) &amp;= T((u_1 + v_1, u_2 + v_2)) \
-&amp;= ((u_1 + v_1) + (u_2 + v_2), u_1 + v_1) \
-&amp;= (u_1 + v_1 + u_2 + v_2, u_1 + v_1)
-\end{align*}</p>
-<p>Sementara itu:</p>
-<p><span class="math notranslate nohighlight">\(T(\mathbf{u}) = (u_1 + u_2, u_1), \quad T(\mathbf{v}) = (v_1 + v_2, v_1)\)</span></p>
-<p><span class="math notranslate nohighlight">\(T(\mathbf{u}) + T(\mathbf{v}) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)\)</span></p>
-<p>Karena:</p>
-<p><span class="math notranslate nohighlight">\( T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})\)</span></p>
-<ol class="arabic simple" start="2">
-<li><p>Cek Perkalian Skalar:</p></li>
-</ol>
-<p>\begin{align*}
-T(c\mathbf{v}) &amp;= T(cv_1, cv_2) \
-&amp;= (cv_1 + cv_2, cv_1) \
-&amp;= c(v_1 + v_2, v_1) \
-&amp;= cT(\mathbf{v})
-\end{align*}</p>
-<ol class="arabic simple" start="3">
-<li><p>Kesimpulan
-Karena kedua sifat di atas dipenuhi, maka:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1) \text{ adalah transformasi linier.}\)</span></p>
-</section>
-<section id="tugas-2-cari-matriks-rotasi-refleksi-shear-scala">
-<h2>Tugas 2  cari matriks rotasi,refleksi,shear,scala<a class="headerlink" href="#tugas-2-cari-matriks-rotasi-refleksi-shear-scala" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Reflection about the x-axis
-Matriks transformasi:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
-1 &amp; 0 \\
-0 &amp; -1
-\end{bmatrix}\)</span></p>
-<p>Contoh titik:</p>
-<p><span class="math notranslate nohighlight">\(
+$T: \mathbb{R}^n \to \mathbb{R}^m$
+
+##### Syarat Transformasi Linier
+Sebuah fungsi $T (v)$adalah transformasi linier jika untuk semua vektor $u,v$ dan skalar *c*,berlaku:
+
+1. Penjumlahan vektor:
+$T(u+v)=T(u)+T(v)$
+
+2. Perkalian skalar:
+$T(c v)=cT(v)$
+Kalau kedua syarat di atas terpenuhi, maka 𝑇 adalah transformasi linier.
+
+##### Tugas 1  Membuktikan bahwa $T(v1,v2)=(v1+v2,v1)$ adalah transformasi Linier
+
+##### Jawaban
+Transformasi $T(v1,v2)=(v1+v2,v1)$ didefinisikan sebagai:
+$T(v1,v2)=(v1+v2,v1)$
+
+Misalkan:
+
+${u} = (u_1, u_2), \quad \mathbf{v} = (v_1, v_2)$
+
+1. Cek Penjumlahan:
+
+\begin{align*}
+T(\mathbf{u} + \mathbf{v}) &= T((u_1 + v_1, u_2 + v_2)) \\
+&= ((u_1 + v_1) + (u_2 + v_2), u_1 + v_1) \\
+&= (u_1 + v_1 + u_2 + v_2, u_1 + v_1)
+\end{align*}
+
+Sementara itu:
+
+$T(\mathbf{u}) = (u_1 + u_2, u_1), \quad T(\mathbf{v}) = (v_1 + v_2, v_1)$
+
+$T(\mathbf{u}) + T(\mathbf{v}) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)$
+
+Karena:
+
+$ T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+
+2. Cek Perkalian Skalar:
+
+\begin{align*}
+T(c\mathbf{v}) &= T(cv_1, cv_2) \\
+&= (cv_1 + cv_2, cv_1) \\
+&= c(v_1 + v_2, v_1) \\
+&= cT(\mathbf{v})
+\end{align*}
+
+3. Kesimpulan
+Karena kedua sifat di atas dipenuhi, maka:
+
+$T(v_1, v_2) = (v_1 + v_2, v_1) \text{ adalah transformasi linier.}$
+
+
+##### Tugas 2  cari matriks rotasi,refleksi,shear,scala
+
+
+1. Reflection about the x-axis
+Matriks transformasi:
+
+
+$\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}$
+
+
+Contoh titik:
+
+$
 (2, 3) \rightarrow (2, -3) 
-\)</span></p>
-<p>Gambar GeoGebra:</p>
+$
+
+Gambar GeoGebra:
+
 <iframe scrolling="no" title="Gambar 1" src="https://www.geogebra.org/material/iframe/id/xhfraxhe/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
-<ol class="arabic simple" start="2">
-<li><p>Reflection about the y-axis
-Matriks transformasi:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
--1 &amp; 0 \\
-0 &amp; 1
-\end{bmatrix}\)</span></p>
-<p>Contoh titik:</p>
-<p><span class="math notranslate nohighlight">\(
+
+
+
+2. Reflection about the y-axis
+Matriks transformasi:
+
+
+$\begin{bmatrix}
+-1 & 0 \\
+0 & 1
+\end{bmatrix}$
+
+
+Contoh titik:
+
+$
 (3, 2) \rightarrow (-3, 2) 
-\)</span></p>
-<p>Gambar GeoGebra:</p>
+$
+
+Gambar GeoGebra:
+
 <iframe scrolling="no" title="Gambar 2" src="https://www.geogebra.org/material/iframe/id/jxtushsj/width/630/height/586/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="586px" style="border:0px;"> </iframe>
-<ol class="arabic simple" start="3">
-<li><p>Reflection about the line <span class="math notranslate nohighlight">\(y = x\)</span>
-Matriks transformasi:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
-0 &amp; 1 \\
-1 &amp; 0
-\end{bmatrix}\)</span></p>
-<p>Contoh titik:</p>
-<p><span class="math notranslate nohighlight">\(
+
+
+3. Reflection about the line $y = x$
+Matriks transformasi:
+
+
+
+$\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}$
+
+
+
+Contoh titik:
+
+$
 (5, 7) \rightarrow (7, 5) 
-\)</span></p>
-<p>Gambar GeoGebra:</p>
+$
+
+Gambar GeoGebra:
+
 <iframe scrolling="no" title="Gambar 3" src="https://www.geogebra.org/material/iframe/id/xwmzkx6q/width/630/height/586/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="586px" style="border:0px;"> </iframe>
-<ol class="arabic simple" start="4">
-<li><p>Reflection about the line <span class="math notranslate nohighlight">\(y = -x\)</span>
-Matriks transformasi:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
-0 &amp; -1 \\
--1 &amp; 0
-\end{bmatrix}\)</span></p>
-<p>Contoh titik:</p>
-<p><span class="math notranslate nohighlight">\(
+
+
+4. Reflection about the line $y = -x$
+Matriks transformasi:
+
+
+$\begin{bmatrix}
+0 & -1 \\
+-1 & 0
+\end{bmatrix}$
+
+
+Contoh titik:
+
+$
 (3, 1) \rightarrow (-1, -3) 
-\)</span></p>
-<p>Gambar GeoGebra:</p>
+$
+
+Gambar GeoGebra:
+
 <iframe scrolling="no" title="Gambar 4" src="https://www.geogebra.org/material/iframe/id/r9ujtmxc/width/630/height/586/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="586px" style="border:0px;"> </iframe>
-<ol class="arabic simple" start="5">
-<li><p>Reflection about the origin
-Matriks transformasi:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
--1 &amp; 0 \\
-0 &amp; -1
-\end{bmatrix}\)</span></p>
-<p>Contoh titik:</p>
-<p><span class="math notranslate nohighlight">\(
+
+
+
+5. Reflection about the origin
+Matriks transformasi:
+
+
+$\begin{bmatrix}
+-1 & 0 \\
+0 & -1
+\end{bmatrix}$
+
+
+Contoh titik:
+
+$
 (6, -3) \rightarrow (-6, 3) 
-\)</span></p>
-<p>Gambar Geogebra:</p>
-<iframe scrolling="no" title="Gambar 5" src="https://www.geogebra.org/material/iframe/id/rpcufcnz/width/630/height/586/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="586px" style="border:0px;"> </iframe>
-</section>
-<section id="refleksi-sumbu-x-2">
-<h2>Refleksi Sumbu X=2<a class="headerlink" href="#refleksi-sumbu-x-2" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
+$
+
+Gambar Geogebra:
+
+<iframe scrolling="no" title="Gambar 5" src="https://www.geogebra.org/material/iframe/id/rpcufcnz/width/630/height/586/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="630px" height="586px" style="border:0px;"> </iframe> -->
+<!-- #### Refleksi Sumbu X=2 --><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import numpy as np</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># from mpl_toolkits.mplot3d import Axes3D</span>
 
-<span class="c1"># Titik-titik objek asli (misalnya, segitiga 3D)</span>
-<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># bentuknya 3xN</span>
+<span class="c1"># # Titik-titik objek asli (misalnya, segitiga 3D)</span>
+<span class="c1"># points = np.array([</span>
+<span class="c1">#     [2, 3, 1],</span>
+<span class="c1">#     [1, 4, 3],</span>
+<span class="c1">#     [4, 2, 1]</span>
+<span class="c1"># ]).T  # bentuknya 3xN</span>
 
-<span class="c1"># Matriks refleksi terhadap bidang x = 0</span>
-<span class="n">reflection_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span>
+<span class="c1"># # Matriks refleksi terhadap bidang x = 0</span>
+<span class="c1"># reflection_matrix = np.array([</span>
+<span class="c1">#     [-1, 0, 0],</span>
+<span class="c1">#     [ 0, 1, 0],</span>
+<span class="c1">#     [ 0, 0, 1]</span>
+<span class="c1"># ])</span>
 
-<span class="c1"># Langkah-langkah untuk refleksi terhadap bidang x = 2:</span>
-<span class="c1"># 1. Translasi ke kiri sejauh 2 satuan (x -= 2)</span>
-<span class="n">translated_points</span> <span class="o">=</span> <span class="n">points</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">translated_points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">2</span>
+<span class="c1"># # Langkah-langkah untuk refleksi terhadap bidang x = 2:</span>
+<span class="c1"># # 1. Translasi ke kiri sejauh 2 satuan (x -= 2)</span>
+<span class="c1"># translated_points = points.copy()</span>
+<span class="c1"># translated_points[0] -= 2</span>
 
-<span class="c1"># 2. Refleksi terhadap bidang x = 0</span>
-<span class="n">reflected_translated</span> <span class="o">=</span> <span class="n">reflection_matrix</span> <span class="o">@</span> <span class="n">translated_points</span>
+<span class="c1"># # 2. Refleksi terhadap bidang x = 0</span>
+<span class="c1"># reflected_translated = reflection_matrix @ translated_points</span>
 
-<span class="c1"># 3. Translasi kembali ke kanan sejauh 2 satuan (x += 2)</span>
-<span class="n">reflected_points</span> <span class="o">=</span> <span class="n">reflected_translated</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">reflected_points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">2</span>
+<span class="c1"># # 3. Translasi kembali ke kanan sejauh 2 satuan (x += 2)</span>
+<span class="c1"># reflected_points = reflected_translated.copy()</span>
+<span class="c1"># reflected_points[0] += 2</span>
 
-<span class="c1"># Buat plot</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1"># # Buat plot</span>
+<span class="c1"># fig = plt.figure()</span>
+<span class="c1"># ax = fig.add_subplot(111, projection=&#39;3d&#39;)</span>
 
-<span class="c1"># Gambar objek asli (biru)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asli&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek asli (biru)</span>
+<span class="c1"># ax.plot(points[0], points[1], points[2], &#39;bo-&#39;, label=&#39;Asli&#39;)</span>
 
-<span class="c1"># Gambar objek setelah refleksi (merah)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reflected_points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Refleksi&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek setelah refleksi (merah)</span>
+<span class="c1"># ax.plot(reflected_points[0], reflected_points[1], reflected_points[2], &#39;ro-&#39;, label=&#39;Refleksi&#39;)</span>
 
-<span class="c1"># Tambahkan bidang bantu di x = 2</span>
-<span class="n">x_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># bidang x = 2</span>
-<span class="n">y_plane</span><span class="p">,</span> <span class="n">z_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">x_plane</span><span class="p">,</span> <span class="n">y_plane</span><span class="p">,</span> <span class="n">z_plane</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="c1"># # Tambahkan bidang bantu di x = 2</span>
+<span class="c1"># x_plane = np.full((2, 2), 2)  # bidang x = 2</span>
+<span class="c1"># y_plane, z_plane = np.meshgrid(np.linspace(0, 3, 2), np.linspace(0, 3, 2))</span>
+<span class="c1"># ax.plot_surface(x_plane, y_plane, z_plane, alpha=0.2, color=&#39;gray&#39;)</span>
 
-<span class="c1"># Set aspek dan label</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Refleksi terhadap bidang x = 2&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_box_aspect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># aspek rasio 1:1:1</span>
+<span class="c1"># # Set aspek dan label</span>
+<span class="c1"># ax.set_xlabel(&#39;X&#39;)</span>
+<span class="c1"># ax.set_ylabel(&#39;Y&#39;)</span>
+<span class="c1"># ax.set_zlabel(&#39;Z&#39;)</span>
+<span class="c1"># ax.set_title(&#39;Refleksi terhadap bidang x = 2&#39;)</span>
+<span class="c1"># ax.legend()</span>
+<span class="c1"># ax.set_box_aspect([1,1,1])  # aspek rasio 1:1:1</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># plt.show()</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/883d064bf707b7c5f8854892f5013d724600b8a56bd4854ec6d7f33cf24f9c4e.png" src="_images/883d064bf707b7c5f8854892f5013d724600b8a56bd4854ec6d7f33cf24f9c4e.png" />
 </div>
-</div>
-</section>
 <section id="refleksi-sumbu-y-2">
-<h2>Refleksi Sumbu y=2<a class="headerlink" href="#refleksi-sumbu-y-2" title="Link to this heading">#</a></h2>
+<h1>Refleksi Sumbu y=2<a class="headerlink" href="#refleksi-sumbu-y-2" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import numpy as np</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># from mpl_toolkits.mplot3d import Axes3D</span>
 
-<span class="c1"># Titik-titik objek asli (misalnya, segitiga 3D)</span>
-<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># bentuknya 3xN</span>
+<span class="c1"># # Titik-titik objek asli (misalnya, segitiga 3D)</span>
+<span class="c1"># points = np.array([</span>
+<span class="c1">#     [1, 1, 1],</span>
+<span class="c1">#     [2, 1, 1],</span>
+<span class="c1">#     [1.5, 2, 1]</span>
+<span class="c1"># ]).T  # bentuknya 3xN</span>
 
-<span class="c1"># Matriks refleksi terhadap bidang y = 0</span>
-<span class="n">reflection_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span>
+<span class="c1"># # Matriks refleksi terhadap bidang y = 0</span>
+<span class="c1"># reflection_matrix = np.array([</span>
+<span class="c1">#     [1,  0, 0],</span>
+<span class="c1">#     [0, -1, 0],</span>
+<span class="c1">#     [0,  0, 1]</span>
+<span class="c1"># ])</span>
 
-<span class="c1"># Langkah-langkah untuk refleksi terhadap bidang y = 2:</span>
-<span class="c1"># 1. Translasi ke bawah sejauh 2 satuan (y -= 2)</span>
-<span class="n">translated_points</span> <span class="o">=</span> <span class="n">points</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">translated_points</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">2</span>
+<span class="c1"># # Langkah-langkah untuk refleksi terhadap bidang y = 2:</span>
+<span class="c1"># # 1. Translasi ke bawah sejauh 2 satuan (y -= 2)</span>
+<span class="c1"># translated_points = points.copy()</span>
+<span class="c1"># translated_points[1] -= 2</span>
 
-<span class="c1"># 2. Refleksi terhadap bidang y = 0</span>
-<span class="n">reflected_translated</span> <span class="o">=</span> <span class="n">reflection_matrix</span> <span class="o">@</span> <span class="n">translated_points</span>
+<span class="c1"># # 2. Refleksi terhadap bidang y = 0</span>
+<span class="c1"># reflected_translated = reflection_matrix @ translated_points</span>
 
-<span class="c1"># 3. Translasi kembali ke atas sejauh 2 satuan (y += 2)</span>
-<span class="n">reflected_points</span> <span class="o">=</span> <span class="n">reflected_translated</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">reflected_points</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">2</span>
+<span class="c1"># # 3. Translasi kembali ke atas sejauh 2 satuan (y += 2)</span>
+<span class="c1"># reflected_points = reflected_translated.copy()</span>
+<span class="c1"># reflected_points[1] += 2</span>
 
-<span class="c1"># Buat plot</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1"># # Buat plot</span>
+<span class="c1"># fig = plt.figure()</span>
+<span class="c1"># ax = fig.add_subplot(111, projection=&#39;3d&#39;)</span>
 
-<span class="c1"># Gambar objek asli (biru)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asli&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek asli (biru)</span>
+<span class="c1"># ax.plot(points[0], points[1], points[2], &#39;bo-&#39;, label=&#39;Asli&#39;)</span>
 
-<span class="c1"># Gambar objek setelah refleksi (merah)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reflected_points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Refleksi&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek setelah refleksi (merah)</span>
+<span class="c1"># ax.plot(reflected_points[0], reflected_points[1], reflected_points[2], &#39;ro-&#39;, label=&#39;Refleksi&#39;)</span>
 
-<span class="c1"># Tambahkan bidang bantu di y = 2</span>
-<span class="n">y_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># bidang y = 2</span>
-<span class="n">x_plane</span><span class="p">,</span> <span class="n">z_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">x_plane</span><span class="p">,</span> <span class="n">y_plane</span><span class="p">,</span> <span class="n">z_plane</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="c1"># # Tambahkan bidang bantu di y = 2</span>
+<span class="c1"># y_plane = np.full((2, 2), 2)  # bidang y = 2</span>
+<span class="c1"># x_plane, z_plane = np.meshgrid(np.linspace(0, 3, 2), np.linspace(0, 3, 2))</span>
+<span class="c1"># ax.plot_surface(x_plane, y_plane, z_plane, alpha=0.2, color=&#39;gray&#39;)</span>
 
-<span class="c1"># Set aspek dan label</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Refleksi terhadap bidang y = 2&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_box_aspect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># aspek rasio 1:1:1</span>
+<span class="c1"># # Set aspek dan label</span>
+<span class="c1"># ax.set_xlabel(&#39;X&#39;)</span>
+<span class="c1"># ax.set_ylabel(&#39;Y&#39;)</span>
+<span class="c1"># ax.set_zlabel(&#39;Z&#39;)</span>
+<span class="c1"># ax.set_title(&#39;Refleksi terhadap bidang y = 2&#39;)</span>
+<span class="c1"># ax.legend()</span>
+<span class="c1"># ax.set_box_aspect([1,1,1])  # aspek rasio 1:1:1</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># plt.show()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/72a01a3fb2a0b0595b96af6b3488df11bca8ad83b5c2f1d3117d12ea9403b6c7.png" src="_images/72a01a3fb2a0b0595b96af6b3488df11bca8ad83b5c2f1d3117d12ea9403b6c7.png" />
 </div>
 </div>
 </section>
 <section id="refleksi-sumbu-y-x">
-<h2>Refleksi Sumbu y=x<a class="headerlink" href="#refleksi-sumbu-y-x" title="Link to this heading">#</a></h2>
+<h1>Refleksi Sumbu y=x<a class="headerlink" href="#refleksi-sumbu-y-x" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import numpy as np</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># from mpl_toolkits.mplot3d import Axes3D</span>
 
-<span class="c1"># Titik-titik objek asli (misalnya, segitiga 3D)</span>
-<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># bentuknya 3xN</span>
+<span class="c1"># # Titik-titik objek asli (misalnya, segitiga 3D)</span>
+<span class="c1"># points = np.array([</span>
+<span class="c1">#     [1, 4, 2],</span>
+<span class="c1">#     [2, 3, 4],</span>
+<span class="c1">#     [3, 2, 1]</span>
+<span class="c1"># ]).T  # bentuknya 3xN</span>
 
-<span class="c1"># Matriks refleksi terhadap bidang y = x</span>
-<span class="n">reflection_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">])</span>
+<span class="c1"># # Matriks refleksi terhadap bidang y = x</span>
+<span class="c1"># reflection_matrix = np.array([</span>
+<span class="c1">#     [0, 1, 0],</span>
+<span class="c1">#     [1, 0, 0],</span>
+<span class="c1">#     [0, 0, 1]</span>
+<span class="c1"># ])</span>
 
-<span class="c1"># Lakukan refleksi</span>
-<span class="n">reflected_points</span> <span class="o">=</span> <span class="n">reflection_matrix</span> <span class="o">@</span> <span class="n">points</span>
+<span class="c1"># # Lakukan refleksi</span>
+<span class="c1"># reflected_points = reflection_matrix @ points</span>
 
-<span class="c1"># Buat plot</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="c1"># # Buat plot</span>
+<span class="c1"># fig = plt.figure()</span>
+<span class="c1"># ax = fig.add_subplot(111, projection=&#39;3d&#39;)</span>
 
-<span class="c1"># Gambar objek asli (biru)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asli&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek asli (biru)</span>
+<span class="c1"># ax.plot(points[0], points[1], points[2], &#39;bo-&#39;, label=&#39;Asli&#39;)</span>
 
-<span class="c1"># Gambar objek setelah refleksi (merah)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reflected_points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Refleksi&#39;</span><span class="p">)</span>
+<span class="c1"># # Gambar objek setelah refleksi (merah)</span>
+<span class="c1"># ax.plot(reflected_points[0], reflected_points[1], reflected_points[2], &#39;ro-&#39;, label=&#39;Refleksi&#39;)</span>
 
-<span class="c1"># Tambahkan bidang bantu y = x di bidang z = 0–3</span>
-<span class="n">x_vals</span><span class="p">,</span> <span class="n">y_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<span class="n">z_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y_vals</span><span class="p">,</span> <span class="n">z_vals</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="c1"># # Tambahkan bidang bantu y = x di bidang z = 0–3</span>
+<span class="c1"># x_vals, y_vals = np.meshgrid(np.linspace(0, 3, 2), np.linspace(0, 3, 2))</span>
+<span class="c1"># z_vals = np.zeros_like(x_vals)</span>
+<span class="c1"># ax.plot_surface(x_vals, y_vals, z_vals, alpha=0.1, color=&#39;gray&#39;)</span>
 
-<span class="c1"># Tambahkan garis bantu bidang y = x (di z = 0)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bidang y = x (z=0)&#39;</span><span class="p">)</span>
+<span class="c1"># # Tambahkan garis bantu bidang y = x (di z = 0)</span>
+<span class="c1"># ax.plot([0, 3], [0, 3], [0, 0], &#39;k--&#39;, label=&#39;Bidang y = x (z=0)&#39;)</span>
 
-<span class="c1"># Set aspek dan label</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Refleksi terhadap bidang y = x&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_box_aspect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># aspek rasio 1:1:1</span>
+<span class="c1"># # Set aspek dan label</span>
+<span class="c1"># ax.set_xlabel(&#39;X&#39;)</span>
+<span class="c1"># ax.set_ylabel(&#39;Y&#39;)</span>
+<span class="c1"># ax.set_zlabel(&#39;Z&#39;)</span>
+<span class="c1"># ax.set_title(&#39;Refleksi terhadap bidang y = x&#39;)</span>
+<span class="c1"># ax.legend()</span>
+<span class="c1"># ax.set_box_aspect([1,1,1])  # aspek rasio 1:1:1</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># plt.show()</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/3c0f35e1d3351db33175d251d290ac637d4a8e9377c7f9d2b7b89a9936510604.png" src="_images/3c0f35e1d3351db33175d251d290ac637d4a8e9377c7f9d2b7b89a9936510604.png" />
 </div>
-</div>
-<section id="definisi-eigenvalue-eigenvector">
-<h3>Definisi Eigenvalue Eigenvector<a class="headerlink" href="#definisi-eigenvalue-eigenvector" title="Link to this heading">#</a></h3>
-<p>Eigenvalue atau Nilai eigen adalah Skalar yang digunakan untuk mengubah atau meregangkan vektor Eigen. Vektor eigen dan nilai eigen berkisar pada konsep matriks.Matriks digunakan dalam masalah pembelajaran mesin untuk mewakili sekumpulan besar informasi. Nilai eigen dan vektor eigen adalah tentang membangun satu vektor dengan satu nilai untuk mewakili matriks besar</p>
-<ul class="simple">
-<li><p>Misalkan  <span class="math notranslate nohighlight">\(A\)</span> adalah matriks persegi misal <span class="math notranslate nohighlight">\((n x n)\)</span> ,maka Vektor tak nol <span class="math notranslate nohighlight">\(v\)</span> disebut eigenvector dari <span class="math notranslate nohighlight">\(A\)</span> ,jika :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[ A \mathbf{v} = \lambda \mathbf{v} \]</div>
-<p>Dimana:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A\)</span> = Matriks</p></li>
-<li><p><span class="math notranslate nohighlight">\(v\)</span> = eigenvektor</p></li>
-<li><p><span class="math notranslate nohighlight">\(\lambda\)</span> = eigenvalue (skalar)</p></li>
-</ul>
-<p>Artinya,tranformasi matriks <span class="math notranslate nohighlight">\(A\)</span> terhadap vekbor <span class="math notranslate nohighlight">\(v\)</span> hanya mengubah skala vektor tersebut dikali dengan <span class="math notranslate nohighlight">\(\lambda\)</span> ,arahnya tetap</p>
-<!-- ##### Mencari Eigenvalue dan Eigenvector
+<!-- ##### Definisi Eigenvalue Eigenvector 
 
-* Carilah nilai eigen dari matriks berikut:
+Eigenvalue atau Nilai eigen adalah Skalar yang digunakan untuk mengubah atau meregangkan vektor Eigen. Vektor eigen dan nilai eigen berkisar pada konsep matriks.Matriks digunakan dalam masalah pembelajaran mesin untuk mewakili sekumpulan besar informasi. Nilai eigen dan vektor eigen adalah tentang membangun satu vektor dengan satu nilai untuk mewakili matriks besar
+* Misalkan  $A$ adalah matriks persegi misal $(n x n)$ ,maka Vektor tak nol $v$ disebut eigenvector dari $A$ ,jika :
 
-$ A = \begin{bmatrix}
-2 & -1 \\
-4 & 3
-\end{bmatrix} $
+$$ A \mathbf{v} = \lambda \mathbf{v} $$
 
-* Pertama, kalikan lambda ke matriks identitas dan kemudian kurangi kedua matriks
+Dimana:
+* $A$ = Matriks
+* $v$ = eigenvektor
+* $\lambda$ = eigenvalue (skalar)
 
-$ A - \lambda I = 
-\begin{bmatrix}
-2 & -1 \\
-4 & 3
-\end{bmatrix}
-- \lambda 
-\begin{bmatrix}
-1 & 0 \\
-0 & 1
-\end{bmatrix}$
-* Kedua, Kita perlu menghitung determinan dari:
-$ \begin{bmatrix}
-2 - \lambda & -1 \\
-4 & 3 - \lambda
-\end{bmatrix}$
-* Karena itu:
-$\det(A - \lambda I) = 
-\begin{vmatrix}
-2 - \lambda & -1 \\
-4 & 3 - \lambda
-\end{vmatrix}
-= (2 - \lambda)(3 - \lambda) + 4
-= \lambda^2 - 5\lambda + 10$
-* Setelah kita menyelesaikan persamaan kuadrat di atas, kita akan menghasilkan dua nilai Eigen:
-$$\lambda = \frac{5}{2} \pm \frac{i\sqrt{15}}{2}$$
-* Setelah menghitung nilai Eigen,Selanjutnya menghitung vektor Eigen
-* Substitusinya:
-$$A - \lambda_2 I = 
-\begin{bmatrix}
-2 - \lambda_2 & -1 \\
-4 & 3 - \lambda_2
-\end{bmatrix}
-=
-\begin{bmatrix}
+ Artinya,tranformasi matriks $A$ terhadap vekbor $v$ hanya mengubah skala vektor tersebut dikali dengan $\lambda$ ,arahnya tetap --><!-- 
+Mencari **eigenvalue** dan **eigenvector** dari matriks:
+
+$A = \begin{bmatrix} 2 & -1 \\ 4 & 3 \end{bmatrix}$
+
+---
+
+**Langkah 1: Mencari Eigenvalue**
+
+Gunakan persamaan karakteristik:
+
+$\det(A - \lambda I) = 0$
+
+Kurangkan $\lambda I$ dari $A$:
+
+$A - \lambda I = \begin{bmatrix} 2 - \lambda & -1 \\ 4 & 3 - \lambda \end{bmatrix}$
+
+Hitung determinan:
+
+$\begin{aligned}
+\det(A - \lambda I) &= (2 - \lambda)(3 - \lambda) - (-1)(4) \\
+&= (2 - \lambda)(3 - \lambda) + 4 \\
+&= \lambda^2 - 5\lambda + 10
+\end{aligned}$
+
+Selesaikan persamaan kuadrat:
+
+$\lambda = \frac{5 \pm \sqrt{(-5)^2 - 4(1)(10)}}{2(1)} = \frac{5 \pm \sqrt{-15}}{2} = \frac{5}{2} \pm \frac{i\sqrt{15}}{2}$
+
+Jadi, dua nilai eigen:
+
+$\lambda_1 = \frac{5}{2} + \frac{i\sqrt{15}}{2}$  
+$\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}$
+
+---
+
+**Langkah 2: Mencari Eigenvector**
+
+Gunakan nilai $\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}$
+
+Matriks $A - \lambda_2 I$:
+
+$\begin{bmatrix}
 \frac{-1}{2} + \frac{i\sqrt{15}}{2} & -1 \\
 4 & \frac{3}{2} + \frac{i\sqrt{15}}{2}
-\end{bmatrix}$$
-* Maka:
-$$\left( \left( \frac{-1}{2} + \frac{i\sqrt{15}}{2} \right)x - 1 \right) = 0 
-\Rightarrow x = \frac{-1 - i\sqrt{15}}{8}$$
-$$
-\boxed{
-\text{Jadi Eigenvector Kedua Adalah: } 
-\vec{v}_2 = \begin{bmatrix}
-\frac{-1 - i\sqrt{15}}{8} \\
-1
-\end{bmatrix}}$$ -->
-<p>Mencari <strong>eigenvalue</strong> dan <strong>eigenvector</strong> dari matriks:</p>
-<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 2 &amp; -1 \\ 4 &amp; 3 \end{bmatrix}\)</span></p>
-<hr class="docutils" />
-<p><strong>Langkah 1: Mencari Eigenvalue</strong></p>
-<p>Gunakan persamaan karakteristik:</p>
-<p><span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span></p>
-<p>Kurangkan <span class="math notranslate nohighlight">\(\lambda I\)</span> dari <span class="math notranslate nohighlight">\(A\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(A - \lambda I = \begin{bmatrix} 2 - \lambda &amp; -1 \\ 4 &amp; 3 - \lambda \end{bmatrix}\)</span></p>
-<p>Hitung determinan:</p>
-<p><span class="math notranslate nohighlight">\(\begin{aligned}
-\det(A - \lambda I) &amp;= (2 - \lambda)(3 - \lambda) - (-1)(4) \\
-&amp;= (2 - \lambda)(3 - \lambda) + 4 \\
-&amp;= \lambda^2 - 5\lambda + 10
-\end{aligned}\)</span></p>
-<p>Selesaikan persamaan kuadrat:</p>
-<p><span class="math notranslate nohighlight">\(\lambda = \frac{5 \pm \sqrt{(-5)^2 - 4(1)(10)}}{2(1)} = \frac{5 \pm \sqrt{-15}}{2} = \frac{5}{2} \pm \frac{i\sqrt{15}}{2}\)</span></p>
-<p>Jadi, dua nilai eigen:</p>
-<p><span class="math notranslate nohighlight">\(\lambda_1 = \frac{5}{2} + \frac{i\sqrt{15}}{2}\)</span><br />
-<span class="math notranslate nohighlight">\(\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}\)</span></p>
-<hr class="docutils" />
-<p><strong>Langkah 2: Mencari Eigenvector</strong></p>
-<p>Gunakan nilai <span class="math notranslate nohighlight">\(\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}\)</span></p>
-<p>Matriks <span class="math notranslate nohighlight">\(A - \lambda_2 I\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
-\frac{-1}{2} + \frac{i\sqrt{15}}{2} &amp; -1 \\
-4 &amp; \frac{3}{2} + \frac{i\sqrt{15}}{2}
-\end{bmatrix}\)</span></p>
-<p>Misal vektor eigen berbentuk:</p>
-<p><span class="math notranslate nohighlight">\(\vec{v} = \begin{bmatrix} x \\ 1 \end{bmatrix}\)</span></p>
-<p>Gunakan baris pertama:</p>
-<p><span class="math notranslate nohighlight">\(\left( \frac{-1}{2} + \frac{i\sqrt{15}}{2} \right)x - 1 = 0\)</span></p>
-<p>Selesaikan:</p>
-<p><span class="math notranslate nohighlight">\(x = \frac{1}{\frac{-1}{2} + \frac{i\sqrt{15}}{2}} = \frac{2}{-1 + i\sqrt{15}}\)</span></p>
-<p>Rasionalisasi:</p>
-<p><span class="math notranslate nohighlight">\(x = \frac{2(-1 - i\sqrt{15})}{(-1 + i\sqrt{15})(-1 - i\sqrt{15})} = \frac{-2 - 2i\sqrt{15}}{16} = \frac{-1 - i\sqrt{15}}{8}\)</span></p>
-<p>Maka, vektor eigen untuk <span class="math notranslate nohighlight">\(\lambda_2\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} \frac{-1 - i\sqrt{15}}{8} \\ 1 \end{bmatrix}\)</span></p>
-<hr class="docutils" />
-<p><strong>Kesimpulan:</strong></p>
-<ul class="simple">
-<li><p>Eigenvalue:<br />
-<span class="math notranslate nohighlight">\(\lambda_1 = \frac{5}{2} + \frac{i\sqrt{15}}{2}\)</span><br />
-<span class="math notranslate nohighlight">\(\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}\)</span></p></li>
-<li><p>Eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_2\)</span>:<br />
-<span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} \frac{-1 - i\sqrt{15}}{8} \\ 1 \end{bmatrix}\)</span></p></li>
-</ul>
+\end{bmatrix}$
+
+Misal vektor eigen berbentuk:
+
+$\vec{v} = \begin{bmatrix} x \\ 1 \end{bmatrix}$
+
+Gunakan baris pertama:
+
+$\left( \frac{-1}{2} + \frac{i\sqrt{15}}{2} \right)x - 1 = 0$
+
+Selesaikan:
+
+$x = \frac{1}{\frac{-1}{2} + \frac{i\sqrt{15}}{2}} = \frac{2}{-1 + i\sqrt{15}}$
+
+Rasionalisasi:
+
+$x = \frac{2(-1 - i\sqrt{15})}{(-1 + i\sqrt{15})(-1 - i\sqrt{15})} = \frac{-2 - 2i\sqrt{15}}{16} = \frac{-1 - i\sqrt{15}}{8}$
+
+Maka, vektor eigen untuk $\lambda_2$:
+
+$\vec{v}_2 = \begin{bmatrix} \frac{-1 - i\sqrt{15}}{8} \\ 1 \end{bmatrix}$
+
+---
+
+**Kesimpulan:**
+
+- Eigenvalue:  
+  $\lambda_1 = \frac{5}{2} + \frac{i\sqrt{15}}{2}$  
+  $\lambda_2 = \frac{5}{2} - \frac{i\sqrt{15}}{2}$
+
+- Eigenvector untuk $\lambda_2$:  
+  $\vec{v}_2 = \begin{bmatrix} \frac{-1 - i\sqrt{15}}{8} \\ 1 \end{bmatrix}$ -->
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code untuk Konfirmasi</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linalg</span> <span class="k">as</span> <span class="n">LA</span>
-<span class="nb">input</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
-<span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2.5+1.93649167j 2.5-1.93649167j]
-[[ 0.1118034 -0.4330127j  0.1118034 +0.4330127j]
- [-0.89442719+0.j        -0.89442719-0.j       ]]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # Code untuk Konfirmasi</span>
+<span class="c1"># import numpy as np</span>
+<span class="c1"># from numpy import linalg as LA</span>
+<span class="c1"># input = np.array([[2,-1],[4,3]])</span>
+<span class="c1"># w, v = LA.eig(input)</span>
+<span class="c1"># print(w)</span>
+<span class="c1"># print(v)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<!-- ##### Ortogonal & Ortonormal
+<!-- <!-- ##### Ortogonal & Ortonormal
 1. Ortogonal
 Dua vektor dikatakan ortogonal jika hasil dot product (perkalian titik) antara keduanya adalah nol. <br>
 **Secara Matematis:** <br>
@@ -1713,129 +1648,144 @@ $$ \vec{u}_1 = \begin{bmatrix} 0.526 \\ 0.851 \end{bmatrix}, \quad
 3. Jadi ortonormal
 4. Dan masing-masing adalah eigenvektor dari A -->
 <small>
-</section>
-<section id="ortogonal-ortonormal">
-<h3>Ortogonal &amp; Ortonormal<a class="headerlink" href="#ortogonal-ortonormal" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p><strong>Ortogonal</strong><br />
-Dua vektor dikatakan ortogonal jika hasil <em>dot product</em> (perkalian titik) antara keduanya adalah nol.<br />
-Secara matematis, jika ada dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span>, maka:</p></li>
-</ol>
-<p><span class="math notranslate nohighlight">\(u \cdot v = 0\)</span></p>
-<p>Artinya:</p>
-<ul class="simple">
-<li><p>Vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span> saling tegak lurus (membentuk sudut 90°).</p></li>
-<li><p>Tidak harus memiliki panjang (norma) tertentu.</p></li>
-</ul>
-<ol class="arabic simple" start="2">
-<li><p><strong>Ortonormal</strong><br />
-Sekumpulan vektor dikatakan ortonormal jika mereka ortogonal satu sama lain <strong>dan</strong> masing-masing memiliki panjang (norma) 1.</p></li>
-</ol>
-<p>Syarat ortonormal:</p>
-<ul class="simple">
-<li><p>Ortogonal antar vektor: <span class="math notranslate nohighlight">\(u \cdot v = 0\)</span> jika <span class="math notranslate nohighlight">\(u \ne v\)</span></p></li>
-<li><p>Norma 1 untuk setiap vektor: <span class="math notranslate nohighlight">\(||u|| = 1\)</span></p></li>
-</ul>
-<p>Misal <span class="math notranslate nohighlight">\(\vec{u}, \vec{v} \in \mathbb{R}^n\)</span>, maka:</p>
-<p><span class="math notranslate nohighlight">\(\vec{u} \cdot \vec{v} = 0\)</span> jika <span class="math notranslate nohighlight">\(\vec{u} \ne \vec{v}\)</span><br />
-<span class="math notranslate nohighlight">\(||\vec{u}|| = 1\)</span> dan <span class="math notranslate nohighlight">\(||\vec{v}|| = 1\)</span></p>
-<hr class="docutils" />
-<p><strong>Contoh:</strong><br />
-Misalkan kita punya matriks simetris 2x2:</p>
-<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 4 &amp; 1 \\ 1 &amp; 3 \end{bmatrix}\)</span></p>
-<p><strong>Langkah: Cari Eigenvalue</strong><br />
-Hitung determinan:</p>
-<p><span class="math notranslate nohighlight">\(\det(A - \lambda I) = \left| \begin{array}{cc} 4 - \lambda &amp; 1 \\ 1 &amp; 3 - \lambda \end{array} \right| = (4 - \lambda)(3 - \lambda) - 1 = 0\)</span></p>
-<p>Maka:</p>
-<p><span class="math notranslate nohighlight">\(\lambda^2 - 7\lambda + 11 = 0\)</span></p>
-<p>Gunakan rumus kuadrat:</p>
-<p><span class="math notranslate nohighlight">\(\lambda = \frac{7 \pm \sqrt{49 - 44}}{2} = \frac{7 \pm \sqrt{5}}{2}\)</span></p>
-<p>Jadi:</p>
-<p><span class="math notranslate nohighlight">\(\lambda_1 = \frac{7 + \sqrt{5}}{2}, \quad \lambda_2 = \frac{7 - \sqrt{5}}{2}\)</span></p>
-<hr class="docutils" />
-<p><strong>Langkah: Cari Eigenvector</strong><br />
-Misal untuk <span class="math notranslate nohighlight">\(\lambda_1 \approx 5.618\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(A - \lambda_1 I \approx \begin{bmatrix} -1.618 &amp; 1 \\ 1 &amp; -2.618 \end{bmatrix}\)</span></p>
-<p>Ambil baris pertama:</p>
-<p><span class="math notranslate nohighlight">\(-1.618x + y = 0 \Rightarrow y = 1.618x\)</span></p>
-<p>Maka vektor eigen (belum dinormalisasi):</p>
-<p><span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 1 \\ 1.618 \end{bmatrix}\)</span></p>
-<p>Norma:</p>
-<p><span class="math notranslate nohighlight">\(||\vec{v}_1|| = \sqrt{1^2 + (1.618)^2} \approx \sqrt{3.618} \approx 1.902\)</span></p>
-<p>Normalisasi:</p>
-<p><span class="math notranslate nohighlight">\(\vec{u}_1 = \frac{1}{1.902} \begin{bmatrix} 1 \\ 1.618 \end{bmatrix} \approx \begin{bmatrix} 0.526 \\ 0.851 \end{bmatrix}\)</span></p>
-<hr class="docutils" />
-<p>Lakukan hal serupa untuk <span class="math notranslate nohighlight">\(\lambda_2 \approx 1.382\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(A - \lambda_2 I \approx \begin{bmatrix} 2.618 &amp; 1 \\ 1 &amp; 1.618 \end{bmatrix}\)</span></p>
-<p>Ambil salah satu baris:</p>
-<p><span class="math notranslate nohighlight">\(2.618x + y = 0 \Rightarrow y = -2.618x\)</span></p>
-<p>Maka vektor eigen:</p>
-<p><span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ -2.618 \end{bmatrix}\)</span></p>
-<p>Norma:</p>
-<p><span class="math notranslate nohighlight">\(||\vec{v}_2|| = \sqrt{1^2 + (-2.618)^2} = \sqrt{7.854} \approx 2.802\)</span></p>
-<p>Normalisasi:</p>
-<p><span class="math notranslate nohighlight">\(\vec{u}_2 = \frac{1}{2.802} \begin{bmatrix} 1 \\ -2.618 \end{bmatrix} \approx \begin{bmatrix} 0.357 \\ -0.934 \end{bmatrix}\)</span></p>
-<hr class="docutils" />
-<p><strong>Hasil Akhir: Basis Ortonormal dari Eigenvektor</strong></p>
-<p>Dua vektor ortonormal hasil normalisasi eigenvektor:</p>
-<p><span class="math notranslate nohighlight">\(\vec{u}_1 = \begin{bmatrix} 0.526 \\ 0.851 \end{bmatrix}, \quad \vec{u}_2 = \begin{bmatrix} 0.357 \\ -0.934 \end{bmatrix}\)</span></p>
-<p>Verifikasi:</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\vec{u}_1 \cdot \vec{u}_2 = 0\)</span> (ortogonal)</p></li>
-<li><p><span class="math notranslate nohighlight">\(||\vec{u}_1|| = 1\)</span>, <span class="math notranslate nohighlight">\(||\vec{u}_2|| = 1\)</span> (norma 1)</p></li>
-<li><p>Jadi keduanya adalah <strong>ortonormal</strong></p></li>
-<li><p>Dan merupakan <strong>eigenvektor dari A</strong></p></li>
-</ol>
-</small>
+<!-- 
+##### Ortogonal & Ortonormal
+<!-- 
+1. **Ortogonal**  
+Dua vektor dikatakan ortogonal jika hasil *dot product* (perkalian titik) antara keduanya adalah nol.  
+Secara matematis, jika ada dua vektor $u$ dan $v$, maka:
+<!-- 
+$u \cdot v = 0$ --> --> -->
+<!-- Artinya:
+- Vektor $u$ dan $v$ saling tegak lurus (membentuk sudut 90°).
+- Tidak harus memiliki panjang (norma) tertentu.
+
+2. **Ortonormal**  
+Sekumpulan vektor dikatakan ortonormal jika mereka ortogonal satu sama lain **dan** masing-masing memiliki panjang (norma) 1.
+
+Syarat ortonormal:
+- Ortogonal antar vektor: $u \cdot v = 0$ jika $u \ne v$
+- Norma 1 untuk setiap vektor: $||u|| = 1$
+
+Misal $\vec{u}, \vec{v} \in \mathbb{R}^n$, maka:
+
+$\vec{u} \cdot \vec{v} = 0$ jika $\vec{u} \ne \vec{v}$  
+$||\vec{u}|| = 1$ dan $||\vec{v}|| = 1$ -->
+<!-- ---
+
+**Contoh:**  
+Misalkan kita punya matriks simetris 2x2:
+
+$A = \begin{bmatrix} 4 & 1 \\ 1 & 3 \end{bmatrix}$
+
+**Langkah: Cari Eigenvalue**  
+Hitung determinan:
+
+$\det(A - \lambda I) = \left| \begin{array}{cc} 4 - \lambda & 1 \\ 1 & 3 - \lambda \end{array} \right| = (4 - \lambda)(3 - \lambda) - 1 = 0$
+
+Maka:
+
+$\lambda^2 - 7\lambda + 11 = 0$
+
+Gunakan rumus kuadrat:
+
+$\lambda = \frac{7 \pm \sqrt{49 - 44}}{2} = \frac{7 \pm \sqrt{5}}{2}$
+
+Jadi:
+
+$\lambda_1 = \frac{7 + \sqrt{5}}{2}, \quad \lambda_2 = \frac{7 - \sqrt{5}}{2}$
+
+---
+
+**Langkah: Cari Eigenvector**  
+Misal untuk $\lambda_1 \approx 5.618$:
+
+$A - \lambda_1 I \approx \begin{bmatrix} -1.618 & 1 \\ 1 & -2.618 \end{bmatrix}$
+
+Ambil baris pertama:
+
+$-1.618x + y = 0 \Rightarrow y = 1.618x$
+
+Maka vektor eigen (belum dinormalisasi):
+
+$\vec{v}_1 = \begin{bmatrix} 1 \\ 1.618 \end{bmatrix}$
+
+Norma:
+
+$||\vec{v}_1|| = \sqrt{1^2 + (1.618)^2} \approx \sqrt{3.618} \approx 1.902$ -->
+<!-- 
+Normalisasi:
+
+$\vec{u}_1 = \frac{1}{1.902} \begin{bmatrix} 1 \\ 1.618 \end{bmatrix} \approx \begin{bmatrix} 0.526 \\ 0.851 \end{bmatrix}$
+
+---
+
+Lakukan hal serupa untuk $\lambda_2 \approx 1.382$:
+
+$A - \lambda_2 I \approx \begin{bmatrix} 2.618 & 1 \\ 1 & 1.618 \end{bmatrix}$
+
+Ambil salah satu baris:
+
+$2.618x + y = 0 \Rightarrow y = -2.618x$
+
+Maka vektor eigen:
+
+$\vec{v}_2 = \begin{bmatrix} 1 \\ -2.618 \end{bmatrix}$ -->
+<!-- Norma:
+
+$||\vec{v}_2|| = \sqrt{1^2 + (-2.618)^2} = \sqrt{7.854} \approx 2.802$
+
+Normalisasi:
+
+$\vec{u}_2 = \frac{1}{2.802} \begin{bmatrix} 1 \\ -2.618 \end{bmatrix} \approx \begin{bmatrix} 0.357 \\ -0.934 \end{bmatrix}$
+
+---
+
+**Hasil Akhir: Basis Ortonormal dari Eigenvektor**
+
+Dua vektor ortonormal hasil normalisasi eigenvektor:
+
+$\vec{u}_1 = \begin{bmatrix} 0.526 \\ 0.851 \end{bmatrix}, \quad \vec{u}_2 = \begin{bmatrix} 0.357 \\ -0.934 \end{bmatrix}$
+
+Verifikasi:
+1. $\vec{u}_1 \cdot \vec{u}_2 = 0$ (ortogonal)  
+2. $||\vec{u}_1|| = 1$, $||\vec{u}_2|| = 1$ (norma 1)  
+3. Jadi keduanya adalah **ortonormal**  
+4. Dan merupakan **eigenvektor dari A** -->
+<p></small> –&gt;</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kode Phython Konfirmasinya</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # Kode Phython Konfirmasinya</span>
+<span class="c1"># import numpy as np</span>
 
-<span class="c1"># Matriks simetris</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="c1"># # Matriks simetris</span>
+<span class="c1"># A = np.array([[4, 1],</span>
+<span class="c1">#               [1, 3]])</span>
 
-<span class="c1"># Cari eigenvalue dan eigenvektor</span>
-<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="c1"># # Cari eigenvalue dan eigenvektor</span>
+<span class="c1"># eigenvalues, eigenvectors = np.linalg.eig(A)</span>
 
-<span class="c1"># Tampilkan hasil</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalue:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvektor (sebelum dinormalisasi):&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors</span><span class="p">)</span>
+<span class="c1"># # Tampilkan hasil</span>
+<span class="c1"># print(&quot;Eigenvalue:&quot;)</span>
+<span class="c1"># print(eigenvalues)</span>
+<span class="c1"># print(&quot;\nEigenvektor (sebelum dinormalisasi):&quot;)</span>
+<span class="c1"># print(eigenvectors)</span>
 
-<span class="c1"># Normalisasi eigenvektor untuk jadi ortonormal</span>
-<span class="n">normalized_vectors</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">eigenvectors</span><span class="o">.</span><span class="n">T</span><span class="p">:</span>  <span class="c1"># per kolom (karena np.linalg.eig mengembalikan kolom sebagai vektor)</span>
-    <span class="n">norm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-    <span class="n">normalized_vectors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span> <span class="o">/</span> <span class="n">norm</span><span class="p">)</span>
+<span class="c1"># # Normalisasi eigenvektor untuk jadi ortonormal</span>
+<span class="c1"># normalized_vectors = []</span>
+<span class="c1"># for v in eigenvectors.T:  # per kolom (karena np.linalg.eig mengembalikan kolom sebagai vektor)</span>
+<span class="c1">#     norm = np.linalg.norm(v)</span>
+<span class="c1">#     normalized_vectors.append(v / norm)</span>
 
-<span class="c1"># Konversi ke array NumPy</span>
-<span class="n">normalized_vectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">normalized_vectors</span><span class="p">)</span>
+<span class="c1"># # Konversi ke array NumPy</span>
+<span class="c1"># normalized_vectors = np.array(normalized_vectors)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvektor yang sudah dinormalisasi (ortonormal):&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">normalized_vectors</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalue:
-[4.61803399 2.38196601]
-
-Eigenvektor (sebelum dinormalisasi):
-[[ 0.85065081 -0.52573111]
- [ 0.52573111  0.85065081]]
-
-Eigenvektor yang sudah dinormalisasi (ortonormal):
-[[ 0.85065081  0.52573111]
- [-0.52573111  0.85065081]]
+<span class="c1"># print(&quot;\nEigenvektor yang sudah dinormalisasi (ortonormal):&quot;)</span>
+<span class="c1"># print(normalized_vectors)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1902,37 +1852,8 @@ Eigenvektor yang sudah dinormalisasi (ortonormal):
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sistem Persamaan Linier</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-3-persamaan">SPL 3 PERSAMAAN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-invers">Matriks Invers</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maka-solusi-akhirnya">6 Maka solusi akhirnya</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-dan-tugas-transformasi-matriks">Ringkasan dan Tugas [Transformasi Matriks]</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-transformasi-matriks">Tugas [Transformasi Matriks]</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-1">Jawaban 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-2">Jawaban 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-5">Jawaban 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-6">Jawaban 6</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier">Transformasi Linier</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-transformasi-linier">Syarat Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1-membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-transformasi-linier">Tugas 1  Membuktikan bahwa <span class="math notranslate nohighlight">\(T(v1,v2)=(v1+v2,v1)\)</span> adalah transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban">Jawaban</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2-cari-matriks-rotasi-refleksi-shear-scala">Tugas 2  cari matriks rotasi,refleksi,shear,scala</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-x-2">Refleksi Sumbu X=2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-2">Refleksi Sumbu y=2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-x">Refleksi Sumbu y=x</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-eigenvector">Definisi Eigenvalue Eigenvector</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal-ortonormal">Ortogonal &amp; Ortonormal</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Refleksi Sumbu y=2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-sumbu-y-x">Refleksi Sumbu y=x</a></li>
 </ul>
 
   </nav></div>
