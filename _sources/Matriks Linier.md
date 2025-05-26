@@ -3,7 +3,7 @@ title: Matriks Linier
 
 ---
 
-### Matriks Invers
+## Matriks Invers
 Matriks Invers adalah matriks yang jika dikalikan dengan matrikd aslinya menghasilkan matriks identitas.jika $A$ adalah matriks persegi berukuran $n x n$,maka invers dari $A$, yang dinotasikan sebagai $A^1$,memenuhi persamaan berikut:
 $A x A^1=A^1 x A = I$
 

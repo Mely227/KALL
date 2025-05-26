@@ -3,7 +3,7 @@ title: Eigenvalue & Eigenvector
 
 ---
 
-### Definisi Eigenvalue Eigenvector 
+## Definisi Eigenvalue Eigenvector 
 
 Eigenvalue atau Nilai eigen adalah Skalar yang digunakan untuk mengubah atau meregangkan vektor Eigen. Vektor eigen dan nilai eigen berkisar pada konsep matriks.Matriks digunakan dalam masalah pembelajaran mesin untuk mewakili sekumpulan besar informasi. Nilai eigen dan vektor eigen adalah tentang membangun satu vektor dengan satu nilai untuk mewakili matriks besar
 * Misalkan  $A$ adalah matriks persegi misal $(n x n)$ ,maka Vektor tak nol $v$ disebut eigenvector dari $A$ ,jika :

@@ -3,9 +3,9 @@ title: Transformasi Matriks
 
 ---
 
-### Ringkasan dan Tugas [Transformasi Matriks]
+## Ringkasan dan Tugas [Transformasi Matriks]
 
-Transformasi Matriks adalah Bayangin kamu punya vektor (misalnya panah yang nunjuk ke suatu arah), terus kamu "ubah" bentuk atau arahnya pakai aturan tertentu. Nah, kalau aturan itu bisa ditulis pakai perkalian matriks, itu disebut.Dengan menggunakan matriks $A$ berukuran $m$ X $n$ bisa digunakan untuk mendefinisikan sebuah fungsi $T$ yang mengambil vektor kolom $\vec{x}$ adalah vektor kolom berukuran $n \times 1$ dan menghasilkan vektor kolom $\vec{y}$ berukuran $m \times 1$ melalui persamaan:
+Transformasi Matriks adalah Bayangin kamu punya vektor (misalnya panah yang nunjuk ke suatu arah) terus kamu "ubah" bentuk atau arahnya pakai aturan tertentu. Nah, kalau aturan itu bisa ditulis pakai perkalian matriks, itu disebut.Dengan menggunakan matriks $A$ berukuran $m$ X $n$ bisa digunakan untuk mendefinisikan sebuah fungsi $T$ yang mengambil vektor kolom $\vec{x}$ adalah vektor kolom berukuran $n \times 1$ dan menghasilkan vektor kolom $\vec{y}$ berukuran $m \times 1$ melalui persamaan:
 $$
 \vec{y} = T(\vec{x}) = A\vec{x}
 $$
