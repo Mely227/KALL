@@ -1211,8 +1211,7 @@ Eigenvektor yang sudah dinormalisasi (ortonormal):
 ### Pengertian
 Perkalian vektor dibedakan menjadi tiga jenis yaitu perkalian vektor dengan skalar, perkalian silang (cross product), dan perkalian titik vektor (dot product).atau hasil kali titik (dot product), yang membantu kita mengukur panjang vektor dan sudut yang dibentuk oleh sepasang vektor. Untuk vektor-vektor dua dimensi v dan w, hasil kali titik (v · w) didefinisikan sebagai bilangan skalar berikut:
 
-$$
-\mathbf{v} \cdot \mathbf{w} = 
+$$\mathbf{v} \cdot \mathbf{w} = 
 \begin{bmatrix}
 v_1 \\
 v_2
@@ -1222,22 +1221,20 @@ v_2
 w_1 \\
 w_2
 \end{bmatrix}
-= v_1w_1 + v_2w_2.
-$$
+= v_1w_1 + v_2w_2.$$
 
 ##### Contoh Basis 2D :
 Basis 2D
 
-\[
 \begin{bmatrix}
 1 & 0 \\
 0 & 1 \\
 \end{bmatrix}
-\]
+
 
 Jadi
 
-\[
+$$
 \begin{bmatrix}
 1 \\
 0
@@ -1247,57 +1244,54 @@ Jadi
 0 \\
 1
 \end{bmatrix}
-= 1\cdot0 + 0\cdot1 = 0
-\]
+= 1.0 + 0.1 = 0
+$$
 
 Gambar Geogebra :
 
 <iframe scrolling="no" title="Basic 2D" src="https://www.geogebra.org/material/iframe/id/khzkvtev/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
 
+
 ##### Contoh 3D : 
 
 Basis 3D
-\[
+$$
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1
 \end{bmatrix}
-\]
+$$
 
 Jadi 
 
-b1 = 
-\[
+b1 = $$
 \begin{bmatrix}
 1 \\
 0 \\
 0
 \end{bmatrix}
-\]
+$$
 
-b2 = 
-\[
+b2 = $$
 \begin{bmatrix}
 0 \\
 1 \\
 0
 \end{bmatrix}
-\]
+$$
 
-b3 = 
-\[
+b3 = $$
 \begin{bmatrix}
 0 \\
 0 \\
 1
 \end{bmatrix}
-\]
+$$
 
 Penyelesaian:
 
-\[
-b1 \cdot b2 = 
+b1.b2   =  $$
 \begin{bmatrix}
 1 \\
 0 \\
@@ -1308,12 +1302,10 @@ b1 \cdot b2 =
 0 \\
 1 \\
 0
-\end{bmatrix}
-= (1 \cdot 0) + (0 \cdot 1) + (0 \cdot 0) = 0
-\]
+\end{bmatrix} = (1.0) + (0.1) + (0.0) =0
+$$
 
-\[
-b1 \cdot b3 = 
+b1.b3   =  $$
 \begin{bmatrix}
 1 \\
 0 \\
@@ -1324,12 +1316,10 @@ b1 \cdot b3 =
 0 \\
 0 \\
 1
-\end{bmatrix}
-= (1 \cdot 0) + (0 \cdot 0) + (0 \cdot 1) = 0
-\]
+\end{bmatrix} = (1.0) + (0.0) + (0.1) =0
+$$
 
-\[
-b2 \cdot b3 = 
+b2.b3   =  $$
 \begin{bmatrix}
 0 \\
 1 \\
@@ -1340,20 +1330,21 @@ b2 \cdot b3 =
 0 \\
 0 \\
 1
-\end{bmatrix}
-= (0 \cdot 0) + (1 \cdot 0) + (0 \cdot 1) = 0
-\]
+\end{bmatrix} = (0.0) + (1.0) + (0.1) =0
+$$
 
 Gambar Geogebra :
 
+
 <iframe scrolling="no" title="Basic 2D" src="https://www.geogebra.org/material/iframe/id/khzkvtev/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
 
 ### Geometri dari Hasil Kali Titik
 
 Hasil kali titik (dot product) adalah operasi antara dua vektor yang menghasilkan skalar.
-Rumusnya yaitu:
+Rumusnya yaitu :
 
-\[
+$$
 \mathbf{v} \cdot \mathbf{w} = 
 \begin{bmatrix}
 v_1 \\
@@ -1368,14 +1359,13 @@ w_2 \\
 \vdots \\
 w_m
 \end{bmatrix}
-= v_1w_1 + v_2w_2 + \ldots + v_mw_m.
-\]
+= v_1w_1 + v_2w_2 + \ldots + v_mw_m.$$
+
 
 ##### Contoh
 Kita menghitung hasil kali titik antara dua vektor berdimensi empat sebagai berikut:
 
-\[
-\begin{bmatrix}
+$$\begin{bmatrix}
 1 \\
 4 \\
 -2 \\
@@ -1388,95 +1378,79 @@ Kita menghitung hasil kali titik antara dua vektor berdimensi empat sebagai beri
 0 \\
 0
 \end{bmatrix}
-= 1(3) + 4(-1) + (-2)(0) + 3(0) = 3 - 4 + 0 + 0 = -1
-\]
+= 1(3) + 4(-1) + (-2)(0) + 5(2) = 3 - 4+0+10 = 9$$
 
 ##### Vektor Satuan $\mathbb{R}^n$
-Misalkan $\mathbf{x}$ adalah vektor tak nol $\mathbb{R}^n$. Maka:
+Misalkan $\mathbf{x}$ adalah vektor tak nol $\mathbb{R}^n$. Maka :
+$$\frac{\mathbf{y}}{\|\mathbf{y}\|}$$
 
-\[
-\frac{\mathbf{y}}{\|\mathbf{y}\|}
-\]
+Adalah vektor satuan
+$$\frac{\mathbf{y}}{\|\mathbf{y}\|} \cdot \frac{\mathbf{y}}{\|\mathbf{y}\|} = \frac{\mathbf{y} \cdot \mathbf{y}}{\|\mathbf{y}\|^2} = \frac{\|\mathbf{y}\|^2}{\|\mathbf{y}\|^2} = 1$$
 
-Adalah vektor satuan:
-
-\[
-\frac{\mathbf{y}}{\|\mathbf{y}\|} \cdot \frac{\mathbf{y}}{\|\mathbf{y}\|} = \frac{\mathbf{y} \cdot \mathbf{y}}{\|\mathbf{y}\|^2} = \frac{\|\mathbf{y}\|^2}{\|\mathbf{y}\|^2} = 1
-\]
 
 ##### Contoh:
 ###### 1. Misalkan diberikan titik berikut:
-* $A = (0,0)$  
-* $B = (3,0)$  
-* $D = (3,2)$  
-* $C = (3,4)$  
+* $A = (0,0)$
+* $B = (3,0)$
+* $D = (3,2)$
+* $C = (3,4)$
 
-###### 2. Vektor-vektor:
+###### 2. Vektor-vektor
 
-* Vektor 
-\[
-u = AB = \begin{bmatrix} 3 \\ 0 \end{bmatrix}
+* Vektor $$ u = AB = \begin{bmatrix}
+3\\
+0 \\
+\end{bmatrix}$$
+
+* Vektor $$ a = AD = \begin{bmatrix}
+3\\
+2 \\
+\end{bmatrix}$$
+
+* Vektor $$ v = AC = \begin{bmatrix}
+3\\
+4 \\
+\end{bmatrix}$$
+
+
+###### 3. Panjang Vektor
+
+$$\|\vec{u}\| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3
 \]
-
-* Vektor 
-\[
-a = AD = \begin{bmatrix} 3 \\ 2 \end{bmatrix}
-\]
-
-* Vektor 
-\[
-v = AC = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
-\]
-
-###### 3. Panjang Vektor:
-
-\[
-\|\vec{u}\| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3
-\]
-
 \[
 \|\vec{a}\| = \sqrt{3^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13}
 \]
-
 \[
-\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
-\]
+\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$$
 
 ###### 4. Sudut antara vektor $u$ dan $a$:
-
 Gunakan rumus dot product:
 
-\[
-\cos \theta = \frac{\vec{u} \cdot \vec{a}}{\|\vec{u}\| \|\vec{a}\|}
-\]
+$$\cos \theta = \frac{\vec{u} \cdot \vec{a}}{\|\vec{u}\| \|\vec{a}\|}$$
 
 Penyelesaian:
-
-\[
+$$
+\
 \vec{u} \cdot \vec{a} = (3)(3) + (0)(2) = 9
 \]
-
 \[
 \cos \theta = \frac{9}{3\sqrt{13}} = \frac{3}{\sqrt{13}} \Rightarrow \theta = \cos^{-1}\left(\frac{3}{\sqrt{13}}\right)
 \]
-
 \[
 \theta \approx 33.69^\circ
-\]
+\]$$
 
 ###### 5. Vektor satuan $v$:
 
-\[
-\hat{v} = \frac{\vec{v}}{\|\vec{v}\|} = \frac{1}{5} \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} \frac{3}{5} \\ \frac{4}{5} \end{bmatrix}
-\]
+$$
+\hat{v} = \frac{\vec{v}}{\|\vec{v}\|} = \frac{1}{5} \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} \frac{3}{5} \\ \frac{4}{5} \end{bmatrix}$$
 
-###### 6. Verifikasi panjang vektor satuan:
+###### 6. Verifikasi panjang vektor satuan
 
-\[
-\|\hat{v}\| = \sqrt{\left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2}
-= \sqrt{\frac{9}{25} + \frac{16}{25}} = \sqrt{\frac{25}{25}} = \sqrt{1} = 1
-\]
+$$ \|\hat{v}\| = \sqrt{\left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2}
+= \sqrt{\frac{9}{25} + \frac{16}{25}} = \sqrt{\frac{25}{25}} = \sqrt{1} = 1$$
 
 ###### Bukti Geogebra
 
-<iframe scrolling="no" title="Sudut" src="https://www.geogebra.org/material/iframe/id/xpgdmx2u/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> <
+<iframe scrolling="no" title="Sudut" src="https://www.geogebra.org/material/iframe/id/xpgdmx2u/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
