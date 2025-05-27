@@ -418,11 +418,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-mathbb-r-n">Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh:</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan-diberikan-titik-berikut">1. Misalkan diberikan titik berikut:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-vektor">2. Vektor-vektor</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#panjang-vektor">3. Panjang Vektor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-vektor">2. Vektor-vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#panjang-vektor">3. Panjang Vektor:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sudut-antara-vektor-u-dan-a">4. Sudut antara vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(a\)</span>:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-v">5. Vektor satuan <span class="math notranslate nohighlight">\(v\)</span>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-panjang-vektor-satuan">6. Verifikasi panjang vektor satuan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-panjang-vektor-satuan">6. Verifikasi panjang vektor satuan:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-geogebra">Bukti Geogebra</a></li>
 </ul>
 </li>
@@ -1555,7 +1555,8 @@ Eigenvektor yang sudah dinormalisasi (ortonormal):
 <h2>Pengertian<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>Perkalian vektor dibedakan menjadi tiga jenis yaitu perkalian vektor dengan skalar, perkalian silang (cross product), dan perkalian titik vektor (dot product).atau hasil kali titik (dot product), yang membantu kita mengukur panjang vektor dan sudut yang dibentuk oleh sepasang vektor. Untuk vektor-vektor dua dimensi v dan w, hasil kali titik (v · w) didefinisikan sebagai bilangan skalar berikut:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{v} \cdot \mathbf{w} = 
+\[\begin{split}
+\mathbf{v} \cdot \mathbf{w} = 
 \begin{bmatrix}
 v_1 \\
 v_2
@@ -1565,104 +1566,114 @@ v_2
 w_1 \\
 w_2
 \end{bmatrix}
-= v_1w_1 + v_2w_2.\end{split}\]</div>
+= v_1w_1 + v_2w_2.
+\end{split}\]</div>
 <section id="contoh-basis-2d">
 <h3>Contoh Basis 2D :<a class="headerlink" href="#contoh-basis-2d" title="Link to this heading">#</a></h3>
-<p>Basis 2D
-$<span class="math notranslate nohighlight">\(
+<p>Basis 2D</p>
+<p>[
 \begin{bmatrix}
-1 &amp; 0 \\
-0 &amp; 1 \\
+1 &amp; 0 \
+0 &amp; 1 \
 \end{bmatrix}
-\)</span>$</p>
+]</p>
 <p>Jadi</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>[
 \begin{bmatrix}
-1 \\
+1 \
 0
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-0 \\
+0 \
 1
 \end{bmatrix}
-= 1.0 + 0.1 = 0\end{split}\]</div>
+= 1\cdot0 + 0\cdot1 = 0
+]</p>
 <p>Gambar Geogebra :</p>
 <iframe scrolling="no" title="Basic 2D" src="https://www.geogebra.org/material/iframe/id/khzkvtev/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
 </section>
 <section id="contoh-3d">
 <h3>Contoh 3D :<a class="headerlink" href="#contoh-3d" title="Link to this heading">#</a></h3>
 <p>Basis 3D
-$<span class="math notranslate nohighlight">\(
+[
 \begin{bmatrix}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; 0 \
 0 &amp; 0 &amp; 1
 \end{bmatrix}
-\)</span>$</p>
+]</p>
 <p>Jadi</p>
-<p>b1 = $<span class="math notranslate nohighlight">\(
+<p>b1 =
+[
 \begin{bmatrix}
-1 \\
-0 \\
+1 \
+0 \
 0
 \end{bmatrix}
-\)</span>$</p>
-<p>b2 = $<span class="math notranslate nohighlight">\(
+]</p>
+<p>b2 =
+[
 \begin{bmatrix}
-0 \\
-1 \\
+0 \
+1 \
 0
 \end{bmatrix}
-\)</span>$</p>
-<p>b3 = $<span class="math notranslate nohighlight">\(
+]</p>
+<p>b3 =
+[
 \begin{bmatrix}
-0 \\
-0 \\
+0 \
+0 \
 1
 \end{bmatrix}
-\)</span>$</p>
+]</p>
 <p>Penyelesaian:</p>
-<p>b1.b2   =  $<span class="math notranslate nohighlight">\(
+<p>[
+b1 \cdot b2 =
 \begin{bmatrix}
-1 \\
-0 \\
+1 \
+0 \
 0
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-0 \\
-1 \\
+0 \
+1 \
 0
-\end{bmatrix} = (1.0) + (0.1) + (0.0) =0
-\)</span>$</p>
-<p>b1.b3   =  $<span class="math notranslate nohighlight">\(
+\end{bmatrix}
+= (1 \cdot 0) + (0 \cdot 1) + (0 \cdot 0) = 0
+]</p>
+<p>[
+b1 \cdot b3 =
 \begin{bmatrix}
-1 \\
-0 \\
+1 \
+0 \
 0
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-0 \\
-0 \\
+0 \
+0 \
 1
-\end{bmatrix} = (1.0) + (0.0) + (0.1) =0
-\)</span>$</p>
-<p>b2.b3   =  $<span class="math notranslate nohighlight">\(
+\end{bmatrix}
+= (1 \cdot 0) + (0 \cdot 0) + (0 \cdot 1) = 0
+]</p>
+<p>[
+b2 \cdot b3 =
 \begin{bmatrix}
-0 \\
-1 \\
+0 \
+1 \
 0
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-0 \\
-0 \\
+0 \
+0 \
 1
-\end{bmatrix} = (0.0) + (1.0) + (0.1) =0
-\)</span>$</p>
+\end{bmatrix}
+= (0 \cdot 0) + (1 \cdot 0) + (0 \cdot 1) = 0
+]</p>
 <p>Gambar Geogebra :</p>
 <iframe scrolling="no" title="Basic 2D" src="https://www.geogebra.org/material/iframe/id/khzkvtev/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
 </section>
@@ -1670,49 +1681,54 @@ $<span class="math notranslate nohighlight">\(
 <section id="geometri-dari-hasil-kali-titik">
 <h2>Geometri dari Hasil Kali Titik<a class="headerlink" href="#geometri-dari-hasil-kali-titik" title="Link to this heading">#</a></h2>
 <p>Hasil kali titik (dot product) adalah operasi antara dua vektor yang menghasilkan skalar.
-Rumusnya yaitu :</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\mathbf{v} \cdot \mathbf{w} = 
+Rumusnya yaitu:</p>
+<p>[
+\mathbf{v} \cdot \mathbf{w} =
 \begin{bmatrix}
-v_1 \\
-v_2 \\
-\vdots \\
+v_1 \
+v_2 \
+\vdots \
 v_m
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-w_1 \\
-w_2 \\
-\vdots \\
+w_1 \
+w_2 \
+\vdots \
 w_m
 \end{bmatrix}
-= v_1w_1 + v_2w_2 + \ldots + v_mw_m.\end{split}\]</div>
+= v_1w_1 + v_2w_2 + \ldots + v_mw_m.
+]</p>
 <section id="contoh">
 <h3>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
 <p>Kita menghitung hasil kali titik antara dua vektor berdimensi empat sebagai berikut:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix}
-1 \\
-4 \\
--2 \\
+<p>[
+\begin{bmatrix}
+1 \
+4 \
+-2 \
 3
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-3 \\
--1 \\
-0 \\
+3 \
+-1 \
+0 \
 0
 \end{bmatrix}
-= 1(3) + 4(-1) + (-2)(0) + 5(2) = 3 - 4+0+10 = 9\end{split}\]</div>
+= 1(3) + 4(-1) + (-2)(0) + 3(0) = 3 - 4 + 0 + 0 = -1
+]</p>
 </section>
 <section id="vektor-satuan-mathbb-r-n">
 <h3>Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span><a class="headerlink" href="#vektor-satuan-mathbb-r-n" title="Link to this heading">#</a></h3>
-<p>Misalkan <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> adalah vektor tak nol <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>. Maka :
-$<span class="math notranslate nohighlight">\(\frac{\mathbf{y}}{\|\mathbf{y}\|}\)</span>$</p>
-<p>Adalah vektor satuan
-$<span class="math notranslate nohighlight">\(\frac{\mathbf{y}}{\|\mathbf{y}\|} \cdot \frac{\mathbf{y}}{\|\mathbf{y}\|} = \frac{\mathbf{y} \cdot \mathbf{y}}{\|\mathbf{y}\|^2} = \frac{\|\mathbf{y}\|^2}{\|\mathbf{y}\|^2} = 1\)</span>$</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> adalah vektor tak nol <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>. Maka:</p>
+<p>[
+\frac{\mathbf{y}}{|\mathbf{y}|}
+]</p>
+<p>Adalah vektor satuan:</p>
+<p>[
+\frac{\mathbf{y}}{|\mathbf{y}|} \cdot \frac{\mathbf{y}}{|\mathbf{y}|} = \frac{\mathbf{y} \cdot \mathbf{y}}{|\mathbf{y}|^2} = \frac{|\mathbf{y}|^2}{|\mathbf{y}|^2} = 1
+]</p>
 </section>
 <section id="id2">
 <h3>Contoh:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
@@ -1726,65 +1742,67 @@ $<span class="math notranslate nohighlight">\(\frac{\mathbf{y}}{\|\mathbf{y}\|} 
 </ul>
 </section>
 <section id="vektor-vektor">
-<h4>2. Vektor-vektor<a class="headerlink" href="#vektor-vektor" title="Link to this heading">#</a></h4>
+<h4>2. Vektor-vektor:<a class="headerlink" href="#vektor-vektor" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Vektor $<span class="math notranslate nohighlight">\( u = AB = \begin{bmatrix}
-3\\
-0 \\
-\end{bmatrix}\)</span>$</p></li>
-<li><p>Vektor $<span class="math notranslate nohighlight">\( a = AD = \begin{bmatrix}
-3\\
-2 \\
-\end{bmatrix}\)</span>$</p></li>
-<li><p>Vektor $<span class="math notranslate nohighlight">\( v = AC = \begin{bmatrix}
-3\\
-4 \\
-\end{bmatrix}\)</span>$</p></li>
+<li><p>Vektor
+[
+u = AB = \begin{bmatrix} 3 \ 0 \end{bmatrix}
+]</p></li>
+<li><p>Vektor
+[
+a = AD = \begin{bmatrix} 3 \ 2 \end{bmatrix}
+]</p></li>
+<li><p>Vektor
+[
+v = AC = \begin{bmatrix} 3 \ 4 \end{bmatrix}
+]</p></li>
 </ul>
 </section>
 <section id="panjang-vektor">
-<h4>3. Panjang Vektor<a class="headerlink" href="#panjang-vektor" title="Link to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[\|\vec{u}\| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3
-\]
-\[
-\|\vec{a}\| = \sqrt{3^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13}
-\]
-\[
-\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5\]</div>
+<h4>3. Panjang Vektor:<a class="headerlink" href="#panjang-vektor" title="Link to this heading">#</a></h4>
+<p>[
+|\vec{u}| = \sqrt{3^2 + 0^2} = \sqrt{9} = 3
+]</p>
+<p>[
+|\vec{a}| = \sqrt{3^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13}
+]</p>
+<p>[
+|\vec{v}| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+]</p>
 </section>
 <section id="sudut-antara-vektor-u-dan-a">
 <h4>4. Sudut antara vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(a\)</span>:<a class="headerlink" href="#sudut-antara-vektor-u-dan-a" title="Link to this heading">#</a></h4>
 <p>Gunakan rumus dot product:</p>
-<div class="math notranslate nohighlight">
-\[\cos \theta = \frac{\vec{u} \cdot \vec{a}}{\|\vec{u}\| \|\vec{a}\|}\]</div>
-<p>Penyelesaian:
-$<span class="math notranslate nohighlight">\(
-\
+<p>[
+\cos \theta = \frac{\vec{u} \cdot \vec{a}}{|\vec{u}| |\vec{a}|}
+]</p>
+<p>Penyelesaian:</p>
+<p>[
 \vec{u} \cdot \vec{a} = (3)(3) + (0)(2) = 9
-\]
-\[
+]</p>
+<p>[
 \cos \theta = \frac{9}{3\sqrt{13}} = \frac{3}{\sqrt{13}} \Rightarrow \theta = \cos^{-1}\left(\frac{3}{\sqrt{13}}\right)
-\]
-\[
+]</p>
+<p>[
 \theta \approx 33.69^\circ
-\]\)</span>$</p>
+]</p>
 </section>
 <section id="vektor-satuan-v">
 <h4>5. Vektor satuan <span class="math notranslate nohighlight">\(v\)</span>:<a class="headerlink" href="#vektor-satuan-v" title="Link to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\hat{v} = \frac{\vec{v}}{\|\vec{v}\|} = \frac{1}{5} \begin{bmatrix} 3 \\ 4 \end{bmatrix} = \begin{bmatrix} \frac{3}{5} \\ \frac{4}{5} \end{bmatrix}\end{split}\]</div>
+<p>[
+\hat{v} = \frac{\vec{v}}{|\vec{v}|} = \frac{1}{5} \begin{bmatrix} 3 \ 4 \end{bmatrix} = \begin{bmatrix} \frac{3}{5} \ \frac{4}{5} \end{bmatrix}
+]</p>
 </section>
 <section id="verifikasi-panjang-vektor-satuan">
-<h4>6. Verifikasi panjang vektor satuan<a class="headerlink" href="#verifikasi-panjang-vektor-satuan" title="Link to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[ \|\hat{v}\| = \sqrt{\left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2}
-= \sqrt{\frac{9}{25} + \frac{16}{25}} = \sqrt{\frac{25}{25}} = \sqrt{1} = 1\]</div>
+<h4>6. Verifikasi panjang vektor satuan:<a class="headerlink" href="#verifikasi-panjang-vektor-satuan" title="Link to this heading">#</a></h4>
+<p>[
+|\hat{v}| = \sqrt{\left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2}
+= \sqrt{\frac{9}{25} + \frac{16}{25}} = \sqrt{\frac{25}{25}} = \sqrt{1} = 1
+]</p>
 </section>
 <section id="bukti-geogebra">
 <h4>Bukti Geogebra<a class="headerlink" href="#bukti-geogebra" title="Link to this heading">#</a></h4>
-<iframe scrolling="no" title="Sudut" src="https://www.geogebra.org/material/iframe/id/xpgdmx2u/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Sudut" src="https://www.geogebra.org/material/iframe/id/xpgdmx2u/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> <
 </section>
 </section>
 </section>
@@ -1881,11 +1899,11 @@ $<span class="math notranslate nohighlight">\(
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-mathbb-r-n">Vektor Satuan <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Contoh:</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#misalkan-diberikan-titik-berikut">1. Misalkan diberikan titik berikut:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-vektor">2. Vektor-vektor</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#panjang-vektor">3. Panjang Vektor</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-vektor">2. Vektor-vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#panjang-vektor">3. Panjang Vektor:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sudut-antara-vektor-u-dan-a">4. Sudut antara vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(a\)</span>:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vektor-satuan-v">5. Vektor satuan <span class="math notranslate nohighlight">\(v\)</span>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-panjang-vektor-satuan">6. Verifikasi panjang vektor satuan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-panjang-vektor-satuan">6. Verifikasi panjang vektor satuan:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-geogebra">Bukti Geogebra</a></li>
 </ul>
 </li>
