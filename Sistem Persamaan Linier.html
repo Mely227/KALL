@@ -187,6 +187,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -426,6 +427,17 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-geogebra">Bukti Geogebra</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-silang">Perkalian Silang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-ada-dua-vektor-di-ruang-3-dimensi">Jika ada dua vektor di ruang 3 dimensi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-soal-1-4">Jawaban Soal 1-4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dengan-vektor">Luas jajaran genjang dengan vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Luas jajaran genjang dengan vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut-0-0-0-1-3-1-dan-2-1-1">Tentukan luas segitiga dengan titik-titik sudut (0,0,0),(1,3,-1), dan (2,1,1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">Tentukan luas segitiga dengan titik-titik sudut</a></li>
 </ul>
 </li>
 </ul>
@@ -1840,6 +1852,112 @@ v = AC = \begin{bmatrix}
 </section>
 </section>
 </section>
+<section id="perkalian-silang">
+<h1>Perkalian Silang<a class="headerlink" href="#perkalian-silang" title="Link to this heading">#</a></h1>
+<p>Perkalian silang (dalam Bahasa Inggris: cross product) adalah operasi dalam vektor tiga dimensi yang menghasilkan vektor baru yang tegak lurus terhadap kedua vektor asalnya.</p>
+<section id="jika-ada-dua-vektor-di-ruang-3-dimensi">
+<h2>Jika ada dua vektor di ruang 3 dimensi:<a class="headerlink" href="#jika-ada-dua-vektor-di-ruang-3-dimensi" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(\vec{v} = \langle v_1, v_2, v_3 \rangle \quad \text{dan} \quad \vec{u} = \langle u_1, u_2, u_3 \rangle\)</span></p>
+<p>Maka perkalian silang dari <span class="math notranslate nohighlight">\((\vec{v} \times \vec{u})\)</span> adalah:</p>
+<p><span class="math notranslate nohighlight">\(\vec{v} \times \vec{u} =
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+v_1 &amp; v_2 &amp; v_3 \\
+u_1 &amp; u_2 &amp; u_3 \\
+\end{vmatrix}\)</span></p>
+<p>Hasilnya berupa vektor baru:</p>
+<p><span class="math notranslate nohighlight">\(\vec{v} \times \vec{}u = (v_2u_3 - v_3u_2)\, \hat{i} - (v_1u_3 - v_3u_1)\, \hat{j} + (v_1u_2 - v_2u_1)\, \hat{k}\)</span></p>
+<p>atau dalam bentuk vektor:</p>
+<p><span class="math notranslate nohighlight">\(\vec{v} \times \vec{u} = \langle v_2u_3 - v_3u_2,\; v_3u_1 - v_1u_3,\; v_1u_2 - v_2u_1 \rangle\)</span></p>
+</section>
+<section id="jawaban-soal-1-4">
+<h2>Jawaban Soal 1-4<a class="headerlink" href="#jawaban-soal-1-4" title="Link to this heading">#</a></h2>
+<section id="luas-jajaran-genjang-dengan-vektor">
+<h3>Luas jajaran genjang dengan vektor<a class="headerlink" href="#luas-jajaran-genjang-dengan-vektor" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}\)</span></p>
+<p>Untuk vektor di 2 dimensi, luas jajar genjang = nilai mutlak dari determinan:</p>
+<p><span class="math notranslate nohighlight">\(\textbf{Luas} = \left| \vec{u} \times \vec{v} \right| = 
+\left| \begin{vmatrix}
+1 &amp; 2 \\
+2 &amp; 1
+\end{vmatrix} \right| 
+= \left| (1)(1) - (2)(2) \right| 
+= \left| 1 - 4 \right| 
+= |-3| = \boxed{3}\)</span></p>
+<p>Geogebra:</p>
+<iframe scrolling="no" title="soal1" src="https://www.geogebra.org/material/iframe/id/t5cypfuw/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+</section>
+<section id="id3">
+<h3>Luas jajaran genjang dengan vektor<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\textbf{Luas} = \left| \begin{vmatrix}
+2 &amp; 0 \\
+0 &amp; 3
+\end{vmatrix} \right| 
+= \left| (2)(3) - (0)(0) \right| 
+= |6| = \boxed{6}\)</span></p>
+<p>Geogebra:</p>
+<iframe scrolling="no" title="soal1" src="https://www.geogebra.org/material/iframe/id/t5cypfuw/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+</section>
+<section id="tentukan-luas-segitiga-dengan-titik-titik-sudut-0-0-0-1-3-1-dan-2-1-1">
+<h3>Tentukan luas segitiga dengan titik-titik sudut (0,0,0),(1,3,-1), dan (2,1,1)<a class="headerlink" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut-0-0-0-1-3-1-dan-2-1-1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[ \vec{a} = \langle 1, 3, -1 \rangle, \quad \vec{b} = \langle 2, 1, 1 \rangle
+\ \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{a} \times \vec{b} = 
+\begin{vmatrix}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+1 &amp; 3 &amp; -1 \\
+2 &amp; 1 &amp; 1
+\end{vmatrix}
+= 4\hat{i} - 3\hat{j} - 5\hat{k}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[|\vec{a} \times \vec{b}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{16 + 9 + 25} = \sqrt{50}\]</div>
+<div class="math notranslate nohighlight">
+\[\text{Luas segitiga} = \frac{1}{2} |\vec{a} \times \vec{b}| = \frac{1}{2} \cdot \sqrt{50} = \frac{\sqrt{50}}{2} = \frac{5\sqrt{2}}{1}\]</div>
+<p>Geogebra:</p>
+<iframe scrolling="no" title="Soal 3" src="https://www.geogebra.org/material/iframe/id/yhfebhpy/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+</section>
+<section id="tentukan-luas-segitiga-dengan-titik-titik-sudut">
+<h3>Tentukan luas segitiga dengan titik-titik sudut<a class="headerlink" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[[
+A = (5, 2, -1), \quad B = (3, 6, 2), \quad C = (1, 0, 4)
+]\]</div>
+<p>Vektor:</p>
+<div class="math notranslate nohighlight">
+\[[
+\vec{AB} = (-2, 4, 3), \quad \vec{AC} = (-4, -2, 5)
+]\]</div>
+<p>Perkalian silang:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+-2 &amp; 4 &amp; 3 \\
+-4 &amp; -2 &amp; 5
+\end{vmatrix}
+= 26\mathbf{i} - 2\mathbf{j} + 20\mathbf{k}
+]\end{split}\]</div>
+<p>Panjang:</p>
+<div class="math notranslate nohighlight">
+\[[
+|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}
+]\]</div>
+<p>Luas segitiga:</p>
+<div class="math notranslate nohighlight">
+\[[
+L = \frac{1}{2} \cdot \sqrt{1080} = \boxed{3\sqrt{30}}
+]\]</div>
+<p>Geogebra:</p>
+<iframe scrolling="no" title="Soal4" src="https://www.geogebra.org/material/iframe/id/bhfrgvfe/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1940,6 +2058,17 @@ v = AC = \begin{bmatrix}
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-geogebra">Bukti Geogebra</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-silang">Perkalian Silang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-ada-dua-vektor-di-ruang-3-dimensi">Jika ada dua vektor di ruang 3 dimensi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban-soal-1-4">Jawaban Soal 1-4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#luas-jajaran-genjang-dengan-vektor">Luas jajaran genjang dengan vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Luas jajaran genjang dengan vektor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut-0-0-0-1-3-1-dan-2-1-1">Tentukan luas segitiga dengan titik-titik sudut (0,0,0),(1,3,-1), dan (2,1,1)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tentukan-luas-segitiga-dengan-titik-titik-sudut">Tentukan luas segitiga dengan titik-titik sudut</a></li>
 </ul>
 </li>
 </ul>

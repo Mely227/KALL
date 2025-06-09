@@ -1521,3 +1521,129 @@ $$
 
 <iframe scrolling="no" title="Sudut" src="https://www.geogebra.org/material/iframe/id/xpgdmx2u/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
 
+## Perkalian Silang
+Perkalian silang (dalam Bahasa Inggris: cross product) adalah operasi dalam vektor tiga dimensi yang menghasilkan vektor baru yang tegak lurus terhadap kedua vektor asalnya.
+
+#### Jika ada dua vektor di ruang 3 dimensi:
+
+$\vec{v} = \langle v_1, v_2, v_3 \rangle \quad \text{dan} \quad \vec{u} = \langle u_1, u_2, u_3 \rangle$
+
+Maka perkalian silang dari $(\vec{v} \times \vec{u})$ adalah:
+
+$\vec{v} \times \vec{u} =
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+v_1 & v_2 & v_3 \\
+u_1 & u_2 & u_3 \\
+\end{vmatrix}$
+
+Hasilnya berupa vektor baru:
+
+$\vec{v} \times \vec{}u = (v_2u_3 - v_3u_2)\, \hat{i} - (v_1u_3 - v_3u_1)\, \hat{j} + (v_1u_2 - v_2u_1)\, \hat{k}$
+
+atau dalam bentuk vektor:
+
+
+$\vec{v} \times \vec{u} = \langle v_2u_3 - v_3u_2,\; v_3u_1 - v_1u_3,\; v_1u_2 - v_2u_1 \rangle$
+
+#### Jawaban Soal 1-4
+##### Luas jajaran genjang dengan vektor
+
+$\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$
+
+Untuk vektor di 2 dimensi, luas jajar genjang = nilai mutlak dari determinan:
+
+$\textbf{Luas} = \left| \vec{u} \times \vec{v} \right| = 
+\left| \begin{vmatrix}
+1 & 2 \\
+2 & 1
+\end{vmatrix} \right| 
+= \left| (1)(1) - (2)(2) \right| 
+= \left| 1 - 4 \right| 
+= |-3| = \boxed{3}$
+
+Geogebra:
+<iframe scrolling="no" title="soal1" src="https://www.geogebra.org/material/iframe/id/t5cypfuw/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
+
+#####  Luas jajaran genjang dengan vektor
+
+$\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad 
+\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$
+
+$\textbf{Luas} = \left| \begin{vmatrix}
+2 & 0 \\
+0 & 3
+\end{vmatrix} \right| 
+= \left| (2)(3) - (0)(0) \right| 
+= |6| = \boxed{6}$
+
+Geogebra:
+<iframe scrolling="no" title="soal1" src="https://www.geogebra.org/material/iframe/id/t5cypfuw/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
+
+##### Tentukan luas segitiga dengan titik-titik sudut (0,0,0),(1,3,-1), dan (2,1,1)
+
+
+$$ \vec{a} = \langle 1, 3, -1 \rangle, \quad \vec{b} = \langle 2, 1, 1 \rangle
+\ $$
+
+$$\vec{a} \times \vec{b} = 
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+1 & 3 & -1 \\
+2 & 1 & 1
+\end{vmatrix}
+= 4\hat{i} - 3\hat{j} - 5\hat{k}$$
+
+$$|\vec{a} \times \vec{b}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{16 + 9 + 25} = \sqrt{50}$$
+
+$$\text{Luas segitiga} = \frac{1}{2} |\vec{a} \times \vec{b}| = \frac{1}{2} \cdot \sqrt{50} = \frac{\sqrt{50}}{2} = \frac{5\sqrt{2}}{1}$$
+
+
+Geogebra:
+<iframe scrolling="no" title="Soal 3" src="https://www.geogebra.org/material/iframe/id/yhfebhpy/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
+
+##### Tentukan luas segitiga dengan titik-titik sudut
+
+$$[
+A = (5, 2, -1), \quad B = (3, 6, 2), \quad C = (1, 0, 4)
+]$$
+
+
+Vektor:
+
+$$[
+\vec{AB} = (-2, 4, 3), \quad \vec{AC} = (-4, -2, 5)
+]$$
+
+Perkalian silang:
+
+$$[
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+-2 & 4 & 3 \\
+-4 & -2 & 5
+\end{vmatrix}
+= 26\mathbf{i} - 2\mathbf{j} + 20\mathbf{k}
+]$$
+
+Panjang:
+
+$$[
+|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}
+]$$
+
+Luas segitiga:
+
+$$[
+L = \frac{1}{2} \cdot \sqrt{1080} = \boxed{3\sqrt{30}}
+]$$
+
+
+Geogebra:
+<iframe scrolling="no" title="Soal4" src="https://www.geogebra.org/material/iframe/id/bhfrgvfe/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
+
