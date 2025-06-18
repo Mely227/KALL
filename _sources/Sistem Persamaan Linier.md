@@ -1647,3 +1647,265 @@ L = \frac{1}{2} \cdot \sqrt{1080} = \boxed{3\sqrt{30}}
 Geogebra:
 <iframe scrolling="no" title="Soal4" src="https://www.geogebra.org/material/iframe/id/bhfrgvfe/width/1272/height/594/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="594px" style="border:0px;"> </iframe>
 
+
+
+## Singular Value Decomposition (SVD)
+#### Definisi SVD
+Singular Value Decomposition (SVD) adalah faktorisasi dari sebuah matriks menjadi tiga buah matriks lain yang memiliki sifat-sifat khusus. SVD digunakan luas dalam berbagai bidang seperti kompresi data, pencarian informasi, pengenalan wajah, dan lain-lain.
+
+#### Kegunaan SVD
+SVD digunakan untuk memecah matriks menjadi tiga bagian yaitu matriks singular, matriks vektor kiri, dan matriks vektor kanan. Fungsi utama dari SVD adalah untuk mengurangi dimensi data dan mempercepat proses komputasi. SVD juga digunakan dalam berbagai aplikasi seperti analisis data, pengolahan citra, dan pemrosesan sinyal, data science, kompresi data.
+* Kompresi Gambar
+    SVD bisa digunakan untuk mengurangi ukuran file gambar dengan menyimpan hanya sebagian kecil dari nilai singular terbesar.
+* Pemprosesan Bahasa Alami (NPL)
+    SVD digunakan dalam Latent Semantic Analysis (LSA) untuk memetakan hubungan antar kata dan dokumen.
+* Reduksi Dimensi (Dimensionality Reduction)
+    SVD digunakan dalam teknik seperti Principal Component Analysis (PCA) untuk mengurangi jumlah variabel dalam data sambil mempertahankan informasi penting.DLL
+    
+#### Formula SVD
+Jika $A$ adalah sebuah matriks berukuran $m \times n$, maka dekomposisi SVD $A$ adalah:
+
+$$A = U \Sigma V^T$$
+
+Keterangan : 
+
+* $A$ = Matriks asli berukuran $m \times n$
+* $U$ = Matriks ortogonal berukuran $m \times m$, kolom-kolomnya disebut **left singular vectors**
+* $\Sigma$ = Matriks diagonal berukuran $m \times n$, berisi **singular value** dari $A$ 
+* $V^T$: Transpos dari matriks ortogonal $V$ berukuran $n \times n$, kolom-kolom dari $V$ disebut **right singular vectors**
+
+#### Contoh Kasus
+##### Matriks 2x2:
+
+$$A = \begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}$$
+
+Contoh Perhitungan SVD (Singular Value Decomposition)
+
+Contoh Matriks 2×2:
+
+$$
+A = \begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}
+$$
+
+Kita ingin menghitung:
+
+$$
+A = U \Sigma V^T
+$$
+
+Langkah-langkah:
+
+1. Hitung $A^T A$
+
+$$
+A^T A = \begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}
+\begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}
+= \begin{bmatrix}
+10 & 6 \\
+6 & 10
+\end{bmatrix}
+$$
+
+2. Cari eigenvalue dari $A^T A$
+
+$$
+\det(A^T A - \lambda I) = 0
+$$
+
+$$
+\det\left(
+\begin{bmatrix}
+10 - \lambda & 6 \\
+6 & 10 - \lambda
+\end{bmatrix}
+\right)
+= (10 - \lambda)^2 - 36 = 0
+$$
+
+$$
+(10 - \lambda)^2 = 36 \Rightarrow \lambda = 4, \; 16
+$$
+
+3. Hitung singular values:
+
+$$
+\sigma_1 = \sqrt{16} = 4, \quad \sigma_2 = \sqrt{4} = 2
+$$
+
+$$
+\Sigma = \begin{bmatrix}
+4 & 0 \\
+0 & 2
+\end{bmatrix}
+$$
+
+4. Hitung eigenvector dari $A^T A$ untuk $V$
+
+Untuk $\lambda = 16$:
+
+$$
+A^T A - 16I = \begin{bmatrix}
+-6 & 6 \\
+6 & -6
+\end{bmatrix}
+\Rightarrow v_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+$$
+
+Untuk $\lambda = 4$:
+
+$$
+A^T A - 4I = \begin{bmatrix}
+6 & 6 \\
+6 & 6
+\end{bmatrix}
+\Rightarrow v_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+$$
+
+Maka:
+
+$$
+V = \frac{1}{\sqrt{2}} \begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix}, \quad V^T = V^T
+$$
+
+5. Hitung $u_i = \frac{1}{\sigma_i} A v_i$
+
+Untuk $\sigma_1 = 4$, $v_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}$:
+
+$$
+u_1 = \frac{1}{4} A v_1 = \frac{1}{4} \begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}
+\cdot \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+= \frac{1}{4\sqrt{2}} \begin{bmatrix} 4 \\ 4 \end{bmatrix}
+= \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+$$
+
+Untuk $\sigma_2 = 2$, $v_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}$:
+
+$$
+u_2 = \frac{1}{2} A v_2 = \frac{1}{2} \begin{bmatrix}
+3 & 1 \\
+1 & 3
+\end{bmatrix}
+\cdot \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+= \frac{1}{2\sqrt{2}} \begin{bmatrix} 2 \\ -2 \end{bmatrix}
+= \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+$$
+
+Maka:
+
+$$
+U = \frac{1}{\sqrt{2}} \begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix}
+$$
+
+Hasil akhir:
+
+$$
+A = U \Sigma V^T = 
+\left( \frac{1}{\sqrt{2}} \begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix} \right)
+\begin{bmatrix}
+4 & 0 \\
+0 & 2
+\end{bmatrix}
+\left( \frac{1}{\sqrt{2}} \begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix} \right)
+$$
+
+
+##### Matriks 3x3
+
+Misalkan matriks:
+$$
+A = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 3
+\end{bmatrix}
+$$
+
+Kita ingin menghitung:
+$$
+A = U \Sigma V^T
+$$
+
+Langkah-langkah:
+
+1. Hitung $A^T A$:
+$$
+A^T A = A^2 =
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 4 & 0 \\
+0 & 0 & 9
+\end{bmatrix}
+$$
+
+2. Eigenvalue dari $A^T A$:
+$$
+\lambda_1 = 1, \quad \lambda_2 = 4, \quad \lambda_3 = 9
+$$
+
+3. Singular values (akar dari eigenvalue):
+$$
+\sigma_1 = 3, \quad \sigma_2 = 2, \quad \sigma_3 = 1
+$$
+$$
+\Sigma = \begin{bmatrix}
+3 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+4. Vektor eigen dari $A^T A$ untuk $V$:
+$$
+v_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad
+v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
+v_3 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
+$$
+$$
+V = I, \quad V^T = I
+$$
+
+5. Hitung $u_i = \frac{1}{\sigma_i} A v_i$:
+
+$$
+u_1 = \frac{1}{3} A v_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad
+u_2 = \frac{1}{2} A v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
+u_3 = A v_3 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+$$
+U = I
+$$
+
+Hasil akhir:
+$$
+A = U \Sigma V^T = I \cdot \Sigma \cdot I = \Sigma
+$$
+
+
