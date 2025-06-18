@@ -2160,53 +2160,69 @@ A = U \Sigma V^T =
 </section>
 <section id="matriks-3x3">
 <h3>Matriks 3x3<a class="headerlink" href="#matriks-3x3" title="Link to this heading">#</a></h3>
-<p>Misalkan matriks:
-$<span class="math notranslate nohighlight">\(
+<p>Misalkan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 A = \begin{bmatrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; 2 &amp; 0 \\
 0 &amp; 0 &amp; 3
 \end{bmatrix}
-\)</span>$</p>
-<p>Kita ingin menghitung:
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>Kita ingin menghitung:</p>
+<div class="math notranslate nohighlight">
+\[
 A = U \Sigma V^T
-\)</span>$</p>
+\]</div>
 <p>Langkah-langkah:</p>
 <ol class="arabic simple">
-<li><p>Hitung <span class="math notranslate nohighlight">\(A^T A\)</span>:
-$<span class="math notranslate nohighlight">\(
+<li><p>Hitung <span class="math notranslate nohighlight">\(A^T A\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 A^T A = A^2 =
 \begin{bmatrix}
 1 &amp; 0 &amp; 0 \\
 0 &amp; 4 &amp; 0 \\
 0 &amp; 0 &amp; 9
 \end{bmatrix}
-\)</span>$</p></li>
-<li><p>Eigenvalue dari <span class="math notranslate nohighlight">\(A^T A\)</span>:
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Eigenvalue dari <span class="math notranslate nohighlight">\(A^T A\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
 \lambda_1 = 1, \quad \lambda_2 = 4, \quad \lambda_3 = 9
-\)</span>$</p></li>
-<li><p>Singular values (akar dari eigenvalue):
-$<span class="math notranslate nohighlight">\(
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Singular values (akar dari eigenvalue):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
 \sigma_1 = 3, \quad \sigma_2 = 2, \quad \sigma_3 = 1
-\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \Sigma = \begin{bmatrix}
 3 &amp; 0 &amp; 0 \\
 0 &amp; 2 &amp; 0 \\
 0 &amp; 0 &amp; 1
 \end{bmatrix}
-\)</span>$</p></li>
-<li><p>Vektor eigen dari <span class="math notranslate nohighlight">\(A^T A\)</span> untuk <span class="math notranslate nohighlight">\(V\)</span>:
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li><p>Vektor eigen dari <span class="math notranslate nohighlight">\(A^T A\)</span> untuk <span class="math notranslate nohighlight">\(V\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 v_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad
 v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
 v_3 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
-\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
 V = I, \quad V^T = I
-\)</span>$</p></li>
+\]</div>
+<ol class="arabic simple" start="5">
 <li><p>Hitung <span class="math notranslate nohighlight">\(u_i = \frac{1}{\sigma_i} A v_i\)</span>:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -2219,10 +2235,11 @@ u_3 = A v_3 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
 \[
 U = I
 \]</div>
-<p>Hasil akhir:
-$<span class="math notranslate nohighlight">\(
+<p>Hasil akhir:</p>
+<div class="math notranslate nohighlight">
+\[
 A = U \Sigma V^T = I \cdot \Sigma \cdot I = \Sigma
-\)</span>$</p>
+\]</div>
 </section>
 </section>
 </section>

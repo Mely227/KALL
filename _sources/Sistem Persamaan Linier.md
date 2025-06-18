@@ -1839,6 +1839,7 @@ $$
 ##### Matriks 3x3
 
 Misalkan matriks:
+
 $$
 A = \begin{bmatrix}
 1 & 0 & 0 \\
@@ -1848,6 +1849,7 @@ A = \begin{bmatrix}
 $$
 
 Kita ingin menghitung:
+
 $$
 A = U \Sigma V^T
 $$
@@ -1855,6 +1857,7 @@ $$
 Langkah-langkah:
 
 1. Hitung $A^T A$:
+
 $$
 A^T A = A^2 =
 \begin{bmatrix}
@@ -1865,14 +1868,17 @@ A^T A = A^2 =
 $$
 
 2. Eigenvalue dari $A^T A$:
+
 $$
 \lambda_1 = 1, \quad \lambda_2 = 4, \quad \lambda_3 = 9
 $$
 
 3. Singular values (akar dari eigenvalue):
+
 $$
 \sigma_1 = 3, \quad \sigma_2 = 2, \quad \sigma_3 = 1
 $$
+
 $$
 \Sigma = \begin{bmatrix}
 3 & 0 & 0 \\
@@ -1882,11 +1888,13 @@ $$
 $$
 
 4. Vektor eigen dari $A^T A$ untuk $V$:
+
 $$
 v_1 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, \quad
 v_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
 v_3 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
 $$
+
 $$
 V = I, \quad V^T = I
 $$
@@ -1904,6 +1912,7 @@ U = I
 $$
 
 Hasil akhir:
+
 $$
 A = U \Sigma V^T = I \cdot \Sigma \cdot I = \Sigma
 $$
